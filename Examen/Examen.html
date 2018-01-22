@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Noticias del mundo</title>
+		<link rel="shortcut icon" type="image/x-icon" href="tablero.png">
+		<link rel="stylesheet" type="text/css" href="examen.css" />
+		<script src="examen.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<div class="navigationbar">
+		    <a href="#Home">Home</a>
+		    <a href="#Noticias">News</a>
+		    <div class="dropdown">
+		    <button class="dropdownbutton">Nosotros 
+		    </button>
+		    <div class="dropdown-content">
+		     	<a href="#">Historia</a>
+		     	<a href="#">Valoración</a>
+		     	<a href="#">Contacto</a>
+		    </div>
+		   </div> 
+		</div>
+		<header>
+	    	<h1>Artículos y noticias del mundo</h1>
+	    </header>   
+		<main>
+			<section>
+				<h2>Informática y comunicaciones</h2>
+					<article id="InformaticaComu">
+						<h3>¿Qué son las media querys?</h3>
+						<img src="Main.png" Alt="Main" />
+						<p>Las media queries son una sintaxis especial para CSS que nos permite definir unos estilos que solo se aplicarán en el caso de que se cumplan unas condiciones definidas. Podemos asimilarlos a unas líneas de código opcional, que sólo se mostrarán para algunos usuarios o dispositivos.</p> <br>
+						<h3>Media queries y diseño responsive. La revolución del diseño web móvil.</h3><br>
+						<p>En un momento donde el tráfico móvil se multiplica cada año, ya no servían las webs estáticas diseñadas para mostrarse en una resolución concreta (¿recuerdas aquello de web diseñada para mostrarse en 600px x 480px?). Era necesario adaptar los diseños a unas dimensiones concretas para que el usuario recibiera la información web en su dispositivo sin tener de hacer zoom para leer los textos.<br>
+						<br>
+						En este momento surgen dos modos de trabajar. La primera abogaba por tener dos versiones de la misma web, una para escritorio y otra para móvil. En la mayoría de los casos no están conectadas entre sí. Esto era costoso de mantener (dos webs) y además no siempre se mostraba el mismo contenido y diseño a ambos usuarios.<br>
+						<br>
+						La segunda forma de trabajar es usar un mismo diseño para ambas resoluciones. Un diseño que se pudiera adaptar a unas determinadas resoluciones o ser flexible en su totalidad, independientemente del contenido y diseño que tuvieran. A esta nueva forma de trabajar se le denominó diseño web responsive.<br>
+						<br>
+						Y como el encargado del diseño en la web es el CSS, surgió un nuevo elemento capaz de incorporar esta flexibilidad a la hoja de estilos: las media queries, que pueden abarcar porciones de código que sólo se aplicarán según que condiciones: si la resolución de pantalla es pequeña, si es muy grande, si el dispositivo está en posición horizontal…<br>
+						</p>
+					</article>
+			<section>
+				<h2 id="tituloinvest">Investigación y ecologia</h2>
+					<article id="InvestigacionEco">
+					<h3>Un análisis de sangre podría detectar ocho tipos de cáncer</h3><br>
+					<p>Científicos de la Universidad Johns Hopkins de Estados Unidos han elaborado una prueba, denominada CancerSEEK, que podría suponer un importante avance en la lucha contra el cáncer. El trabajo, publicado en la revista Science, aún no ha sido testado ni validado, pero esta investigación podría ser capaz de detectar ocho tipos de cáncer a partir de un análisis de sangre: mama, colorrectal, pulmón, ovario, hígado, estómago, páncreas y esófago.<br>
+					<br>
+					Celulas investigación<br>
+					<img src="celula.jpg" alt="Celula" />
+					<br>
+					El test podría ayudar a reducir el número de falsos positivos – la exploración que indica una enfermedad cuando en realidad no existe – y contribuir a una mayor detección precoz de los citados tumores, minimizando así las técnicas quirúrgicas invasivas. No obstante, la investigación se halla en una fase incipiente y sus aplicaciones en la práctica clínica podrían estar aún lejos de introducirse.<br>
+					<br>
+					Los científicos han estado centrados en análisis de biopsias líquidas que busca ADN mutado que flota libremente en la sangre y proteínas relacionadas al cáncer, para tratar de encontrar el cáncer antes de que se expanda y cuando hay una mejor chance de curar la enfermedad.</p>
+					</article>
+	    	</section>
+		</main> 
+	<aside>
+		<h3 class= "table"><u style="position:absolute;top:225px;left:1190px; color: #440D2E">Barra lateral</u></h3>
+			<table style="position:absolute;top:280px;left:1190px;" >
+		    <tr>
+		      <td><h4>Campamentos</h4></td>
+		    </tr>
+		    <tr>
+		      <td><h5>Circuitos</h5></td>
+		    </tr>
+		    <tr>
+		      <td><h5>Equipamiento</h5></td>
+		    </tr>
+		    <tr>
+		   	  <td><h5>Mapas personalizados</h5></td>
+		    </tr>
+		    <tr>
+		   	  <td><h5>Catálogo de dinosaurios</h5></td>
+		    </tr>
+		    <tr>
+		   	  <td><h5>Checklist del equipamiento</h5></td>
+		    </tr>
+		</table>
+	</aside>
+	</body>
+	<footer>
+		    <div class= "footertable">
+		      <td  div onmouseover="NoticiasOVER(this)" onmouseout="NoticiasOUT(this)">Nuevas noticias</td>
+		      <td  div onmouseover="NosotrosOVER(this)" onmouseout="NosotrosOUT(this)">Sobre nosotros</td>		
+		      <td  div onmouseover="ContactoOVER(this)" onmouseout="ContactoOUT(this)">Contacto</td>
+		      <td  div onmouseover="OtrosOVER(this)" onmouseout="OtrosOUT(this)">Otros</td>
+		    </div>
+	</footer>
+</html>
