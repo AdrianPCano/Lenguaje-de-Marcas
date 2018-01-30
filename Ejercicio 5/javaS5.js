@@ -106,5 +106,3 @@ function FTDOWN(obj) {
 function FTUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
-
-
