@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" type="text/css" href="Quiz.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+		<script src = "jsquiz.js"></script>
+	</head>
+	<body>
+		<h1>Hearthstone Quiz</h1>
+		<form id="quiz" name="quiz">
+			<p class="questions">¿Cuántas clases existen en el juego?</p>
+			<input type="radio" class="mc" name="question1" value="8">8<br />
+			<input type="radio" class="mc" name="question1" value="7">7<br />
+			<input type="radio" class="mc" name="question1" value="9">9<br />
+			<p class="questions">¿Cuántos cambios ha tenido Fuerza de la Naturaleza?</p>
+			<input type="radio" class="mc" name="question2" value="1">1<br />
+			<input type="radio" class="mc" name="question2" value="3">3<br />
+			<input type="radio" class="mc" name="question2" value="2">2<br />
+			<p class="questions">¿Quién es el actual campeón del mundo (2018)?</p>
+			<input type="radio" class="mc" name="question3" value="Pavel">Pavel<br />
+			<input type="radio" class="mc" name="question3" value="Fr0zen">Fr0zen<br />
+			<input type="radio" class="mc" name="question3" value="Tom60229">Tom60229<br />
+			<p class="questions">¿Qué obtienes si quedas nº1 del rango Leyenda en Julio?</p>
+			<input type="radio" class="mc" name="question4" value="50Puntos">20 puntos para el mundial, lo mismo que en los otros meses<br />
+			<input type="radio" class="mc" name="question4" value="Recompensa">Recompensa de temporada solamente<br />
+			<input type="radio" class="mc" name="question4" value="20+Rec">Recompensa de temporada y 20 puntos para el mundial<br />
+			<p class="questions">¿Cuál de estos esbirros son destruidos por el Cazador de Fieras?</p>
+			<input type="radio" class="mc" name="question5" value="Todos">Todos<br />
+			<input type="radio" class="mc" name="question5" value="Boom">Dr.Boom<br />
+			<input type="radio" class="mc" name="question5" value="Alamuerte">Alamuerte<br />
+			<input type="radio" class="mc" name="question5" value="Stalagg">Stalagg<br />
+			<p class="questions">¿Qué ocurre si juegas la Bruja del mar naga y Aviana en ese orden?</p>
+			<input type="radio" class="mc" name="question6" value="Cartas5">Todas tus cartas cuestan 5<br />
+			<input type="radio" class="mc" name="question6" value="Esbirros5">Todos tus esbirros cuestan 5<br />
+			<input type="radio" class="mc" name="question6" value="Esbirros1">Todos tus esbirros cuestan 1<br />
+			<p class="questions">¿Cuál es la entrada de Leeroy Jenkins?</p>
+			<input type="radio" class="mc" name="question7" value="Leeroy">LEEROY JENKIIIIIINS!!!<br />
+			<input type="radio" class="mc" name="question7" value="Ready">Preparaos, aqui llega Leeroy!<br />
+			<input type="radio" class="mc" name="question7" value="Over">Se acabó, allá voy!<br />
+			<p class="questions">¿Qué esbirro tiene 8/8 con cargar?</p>
+			<input type="radio" class="mc" name="question8" value="King">Rey Krush<br />
+			<input type="radio" class="mc" name="question8" value="Wind">Al'akir, comandador del viento<br />
+			<input type="radio" class="mc" name="question8" value="Baine">Baine Pezuña de Sangre!<br />
+			<p class="questions">¿Cuál es la primera carta legendaria que desbloqueas en la aventura "Una noche en Karazhan"?</p>
+			<input type="radio" class="mc" name="question9" value="Knight">El caballero oscuro<br />
+			<input type="radio" class="mc" name="question9" value="Medivh">Medivh<br />
+			<input type="radio" class="mc" name="question9" value="Moroes">Moroes<br />
+			<p class="questions">¿Quién es "El Poder Encarnado"?</p>
+			<input type="radio" class="mc" name="question10" value="Eye">Viejo Ojo Sombrío<br />
+			<input type="radio" class="mc" name="question10" value="Alamuerte">Alamuerte<br />
+			<input type="radio" class="mc" name="question10" value="Kel">Kel'Thuzad<br />
+			<p class="questions">¿Qué nuevo mazo traen las Mafias de Gadgetzan para el druida?</p>
+			<input type="radio" class="mc" name="question11" value="Aggro">Aggro<br />
+			<input type="radio" class="mc" name="question11" value="Jade">Golems De Jade<br />
+			<input type="radio" class="mc" name="question11" value="Brann">Brann + Kazakus<br />
+			<input id="button" type="button" value="I'm finished!" onclick="check()">
+		</form>
+		<div id="after_submit">
+			<p id="number_correct"></p>
+			<p id="message"></p>
+			<img id="picture">
+		</div>
+	</body>
+</html>
+ 
