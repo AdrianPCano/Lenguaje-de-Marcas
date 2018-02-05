@@ -8,8 +8,8 @@ function BDOUT(obj) {
 	obj.style.fontWeight = "normal";
 }
 
-function BDOWN(obj) {
-	document.getElementById("descripcion").style.color = "black";
+function BDDOWN(obj) {
+	document.getElementById("descripcion").style.color = "red";
 	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
@@ -17,7 +17,7 @@ function BDUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
 function PROVER(obj) {
-	obj.style.color = "green";
+	obj.style.color = "red";
 	obj.style.fontWeight = "bold";
 }
 
@@ -27,15 +27,15 @@ function PROUT(obj) {
 }
 
 function PRDOWN(obj) {
-	document.getElementById("descripcion").style.color = "orange";
-	document.getElementById("descripcion").innerHTML = "Descripcion Programacion: Nos centramos en aprender lenguajes de programacion como Python y Java para crear programas.";
+	document.getElementById("descripcion").style.color = "red";
+	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
 function PRUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
 function SIOVER(obj) {
-	obj.style.color = "blue";
+	obj.style.color = "red";
 	obj.style.fontWeight = "bold";
 }
 
@@ -45,15 +45,15 @@ function SIOUT(obj) {
 }
 
 function SIDOWN(obj) {
-	document.getElementById("descripcion").style.color = "yellow";
-	document.getElementById("descripcion").innerHTML = "Descripcion Sistemas operativos: Nos centramos en aprender conceptos básicos. Tipos y estructuras de SSOO.";
+	document.getElementById("descripcion").style.color = "red";
+	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
 function SIUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
 function EDOVER(obj) {
-	obj.style.color = "yellow";
+	obj.style.color = "red";
 	obj.style.fontWeight = "bold";
 }
 
@@ -63,15 +63,15 @@ function EDOUT(obj) {
 }
 
 function EDOWN(obj) {
-	document.getElementById("descripcion").style.color = "yellow";
-	document.getElementById("descripcion").innerHTML = "Descripcion Entornos de desarrollo: Nos centramos en maximizar la productividad del programador proporcionando componentes muy unidos con interfaces de usuario similares.";
+	document.getElementById("descripcion").style.color = "red";
+	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
 function EDUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
 function LMOVER(obj) {
-	obj.style.color = "black";
+	obj.style.color = "red";
 	obj.style.fontWeight = "bold";
 }
 
@@ -81,15 +81,15 @@ function LMOUT(obj) {
 }
 
 function LMDOWN(obj) {
-	document.getElementById("descripcion").style.color = "black";
-	document.getElementById("descripcion").innerHTML = "Descripcion Lenguaje de marcas: Nos centramos en desarrollo web, lo primero que aprendemos es el lenguage de marcas más extendido: HTML.";
+	document.getElementById("descripcion").style.color = "red";
+	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
 function LMUP(obj) {
 	document.getElementById("descripcion").innerHTML = ""
 }
 function FTOVER(obj) {
-	obj.style.color = "orange";
+	obj.style.color = "red";
 	obj.style.fontWeight = "bold";
 }
 
@@ -99,8 +99,8 @@ function FTOUT(obj) {
 }
 
 function FTDOWN(obj) {
-	document.getElementById("descripcion").style.color = "orange";
-	document.getElementById("descripcion").innerHTML = "No tengo ninguna clase a esta hora. ";
+	document.getElementById("descripcion").style.color = "red";
+	document.getElementById("descripcion").innerHTML = "Descripcion Bases de datos: Nos centramos en el manejo de las bases mediante SQL, mySQL y en un principio Algebra relational.";
 }
 
 function FTUP(obj) {

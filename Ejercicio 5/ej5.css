@@ -21,14 +21,13 @@ body {
 .tabla td {
 	background-color: #9999ff;
 	padding: 10px;
-	width: 180px;
+	width: 150px;
 	border: #0099cc solid;
 	border-radius: 4px;
 }
 
-.tabla{
+.tabla {
 	margin-top: 50px;
-	margin-left: 220px;
+	margin-left: 470px;
 	border: solid;
-	font-size: large;
 }

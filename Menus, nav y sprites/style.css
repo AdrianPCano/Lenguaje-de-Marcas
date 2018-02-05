@@ -1,0 +1,146 @@
+body {
+    width: 750px;
+    margin: auto;
+    background-color: #ccf2ff;
+}
+
+nav {
+    display: inline-block;
+    width: 750px;
+}
+
+nav a {
+    font-size: 1.4em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#list_home {
+    position: absolute;
+    border-radius: 5px;
+    width: 800px;
+    height:35px;
+    padding-top: 15px;
+    padding-left: 5px;
+    background-color:  #009900;
+}
+
+.List_home {
+    height: 25px;
+    position: absolute;
+    right: 160px;
+    bottom: -3px;
+    font-size: 1.4em;
+    padding: 3px 8px 0px 8px;
+}
+.Color_nav {
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+.List_noticias {
+    position: absolute;
+    line-height: 30px;
+    font-size: 1.2em;
+    margin-left: -30px;
+} 
+
+#list_noticias {
+	position: absolute;
+    border-radius: 5px;
+    width: 120px;
+    height: 200px;
+    padding-left: 4px;
+    background-color: #009900;
+}
+
+#conversation_two {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+#conversation_one {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    background-color: lightgreen;
+    margin-left: 300px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: #0066FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+}
+
+.show {
+    display:block;
+}
+
+#noticias_section {
+    margin-left: 150px;
+}
+
+#home_section {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#blog_section {
+    margin-left: 200px;
+}
+
+.Color_blog {
+    color: red;
+    font-size: 1.5em;
+    padding: 15px 20px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+#footer_src {
+    margin-left: 300px;
+    margin-top: 10px;
+}
