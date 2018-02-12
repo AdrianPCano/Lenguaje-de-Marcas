@@ -1,0 +1,160 @@
+body {
+    width: 750px;
+    margin: auto;
+    display: block;
+
+}
+
+main{
+    padding: 10rem;
+    display: block;
+
+}
+
+h1{
+    margin-left: 200px;
+    margin-top:  120px;
+    margin-bottom: -75px;
+    border-color: red;
+}
+
+
+section h2{
+    background-color: #0099ff;
+    color: black;
+    font-size: xx-large;
+    width: 700px;
+    margin-bottom: 30px;
+     border-radius: 15px 50px;
+    text-align: center;
+}
+h4{
+
+    text-align: right;
+    padding-left: 25px;
+    font-size: large;
+}
+article {
+    display: inline-block;
+    background-color: #5A9DBB;
+    width: 700px;
+    height: 850px;
+    border: 3px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+img {
+    border: 1px solid ;
+    margin-top: 15px;
+    margin-left: 150px;
+    padding: 15px;
+}
+
+p {
+    margin: 2px 2px;
+}
+
+.navigationbar {
+    overflow: hidden;
+    background-color: red;
+    font-family: Arial;
+    float: left;
+    text-decoration: none;
+    display: block;
+    margin-left: -25px;
+    margin-top: -20px;
+}
+
+
+.navigationbar li {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+.dropdown .dropdownbutton {
+    text-decoration: none;
+    border: transparent;
+    color: white;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+
+
+}
+
+.navigationbar a:hover, .dropdown:hover .dropdownbutton {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.dropdown-content li {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    list-style-type: none;
+}
+
+.dropdown-content a:hover {
+    background-color: blue;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer a {
+    text-decoration: none;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+footer a:hover {
+    background-color: purple;
+    border-radius: 1px solid;
+}
+
+footer {
+    display: inline-block;
+    background-color: #FF5733;
+    border-radius: 4px black;
+    width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+p::first-letter { 
+    font-size: 120%;
+    color: black;
+}
+.tostadora:hover{
+    color: #586ead;
+    border-bottom: 3px dotted;
+    cursor: pointer;
+}
