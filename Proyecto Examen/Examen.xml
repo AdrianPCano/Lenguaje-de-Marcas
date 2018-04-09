@@ -1,0 +1,67 @@
+<Questions>
+    <Question id="Num01" Text="Current Champion of the World">
+        <Type>Textfield</Type>
+        <Answer correct="true">MAGNUS CARLSEN</Answer>
+    </Question>
+    <Question id="Num02" Text="What is the best move?">
+        <Type>radio</Type>
+        <Answer correct="true">The best move is XX</Answer>
+        <Answer>The best move is XX</Answer>
+        <Answer>The best move is XX</Answer>
+        <Answer>None of the others</Answer>
+    </Question>
+    <Question id="Num03" Text="What is the best move?"> 
+        <Type>radio</Type>
+        <Answer>The best move is XX</respuesta>
+        <Answer correct="true">The best move is XX</Answer>
+        <Answer>The best move is XX</Answer>
+        <Answer>None of the others</Answer>
+    </Question>
+    <Question id="Num04" Text="What kind of castling is right?">
+        <Type>MultipleSelect</Type>
+        <Answer>Castling right</Answer>
+        <Answer correct="true">Castling short </Answer>
+        <Answer correct="true">Castling long </Answer>
+        <Answer>Castling left</Answer>
+    </Question>
+    <Question id="Num05" Text="Select all the correct answers">
+        <Type>checkbox</Type>
+        <Answer correct="true">There are 3 phases in a chess game (Opening, Middlegame and Endgame)</Answer>
+        <Answer>There are 3 phases in a chess game (Opening, Tacticgame and Positionalgame)</Answer>
+        <Answer correct="true">The Opening is the most important phase</Answer>
+        <Answer>None of the 3 phases really matter</Answer>
+    </Question>
+    <Question id="Num06" Text="Who is going to challenge Magnus Carlsen for the title of World Champion 2018?">
+        <Type>Textfield</Type>
+        <Answer correct="true">FABIANO CARUANA</Answer>
+    </Question>
+    <Question id="Num07" Text="How many pieces are there on a chessboard?">
+        <Type>Dropdown</Type>
+        <Answer>16</Answer>
+        <Answer correct="true">32</Answer>
+        <Answer>64</Answer>
+        <Answer>None of the others</Answer>
+    </Question>
+    <Question id="Num08" Text="Which of these moves are considered legal in the first move?">
+        <Type>MultipleSelect</Type>
+        <Answer correct="true">Nf3</Answer>
+        <Answer>Castling</Answer>
+        <Answer correct="true">e4</Answer>
+        <Answer>e4xd5</Answer>
+    </Question>
+    <Question id="Num09" Text="Select all the correct answers">
+        <Type>checkbox</Type>
+        <Answer>when a pawn reaches the last square he can become a king</Answer>
+        <Answer correct="true">when a pawn reaches the last square it can be converted into everything except the king</Answer>
+        <Answer correct="true">There are 64 squares in total</Answer>
+        <Answer>A pawn cannot be ceonverted into anything</Answer>
+    </Question>
+    <Question id="Num10" Text="In what year did Magnus Carlsen become World Champion?">
+        <Type>Dropdown</Type>
+        <Answer correct="true">2013</Answer>
+        <Answer>2017</Answer>
+        <Answer>2016</Answer>
+        <Answer>1998</Answer>
+    </Question>
+</Questions>
+

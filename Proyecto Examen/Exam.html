@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./CSS/Examen.css"/>
+        <script src="JS/js2.js"></script>
+        <title>University</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./Images/University.jpg">
+    </head>
+    <body>
+    	<header>
+            <nav>
+			    <ul>
+				    <li><a href="Home.html">Home</a></li>
+				    <li><a href="Exam.html">Exam</a></li>
+				    <li><a href="AboutUs.html">About us</a></li>
+			    </ul>
+			</nav>
+			<section id="picture">
+                <h1 id="text"><img id="Logo" src="./Images/University.jpg" alt="Logo">University of Massachussets</h1>
+            </section>
+		</header>
+		<main>
+			<div id="timer1">
+				<p>Instructions timer</p>
+				<p id="notimer"><span id="time">01:00</span></p>
+			</div>              
+			<div id="instructions">
+				<h1>Please read the INSTRUCTIONS carefully pls</h1>
+				<p>You have <strong> 15 </strong> minutes to take the exam.<br />
+				Keep in mind that the questions you have to write in, you have to write it all in capital letters.<br />
+				The multiple choice questions have a minimum of 2 correct answers, if you do not mark all of the correct questions, you will receive 0 points.<br />
+				Pay special attention to questions with built-in images, they may not look quite right due to size.<br />
+				Good Luck!</p>
+			</div>
+			<div id="timer2">
+				<p>Exam timer</p>
+				<span id="timer">15:00</span>
+			</div>
+			<div id="Puntuacion">
+				<p>Puntuacion</p>
+				<hr>
+				<h3>Puntos correcto</h3>
+				<h4>Puntos correcto</h4>
+				<h3>Puntos incorrecto</h3>
+				<h4>Puntos incorrecto</h4>
+				<h3>putnuacion final</h3>
+				<h4>putnuacion final</h4>
+			</div>
+			<form id="exam">
+				<h2>Question 1</h2>
+                <h3>ANSWER</h3>
+                <span id="Q1"></span>
+                <input type="Textfield">
+                <h2>Question 2</h2>
+                <a><img src="./Images/board.png" alt="board" /></a>
+                <h3>ANSWER</h3>
+                <span id="Q2"></span>
+                <div class="radio" id="radio1"></div>
+                <h2>Question 3</h2>
+                <a><img src="./Images/board.png" alt="board" /></a>
+                <h3>ANSWER</h3>
+                <span id="Q3"></span>
+                <div class="radio" id="radio2"></div>
+                <h2>Question 4</h2>
+                <h3>ANSWER</h3>
+                <span id="Q4"></span>
+                <select multiple>
+                    <option>Choose one...</option>
+                </select>
+                <h2>Question 5</h2>
+                <h3>ANSWER</h3>
+                <span id="Q5"></span>
+                <div class="checkbox" id="checkbox1"></div>
+                <h2>Question 6</h2>
+                <h3>ANSWER</h3>
+                <span id="Q6"></span>
+                <input type="Textfield">
+                <h2>Question 7</h2>
+                <h3>ANSWER</h3>
+                <span id="Q7"></span>
+                <select multiple>
+                    <option>Choose one...</option>
+                </select>
+                <h2>Question 8</h2>
+                <h3>ANSWER</h3>
+                <span id="Q8"></span>
+                <select multiple>
+                    <option>Choose one...</option>
+                </select>
+                <h2>Question 9</h2>
+                <h3>ANSWER</h3>
+                <span id="Q9"></span>
+                <div class="checkbox" id="checkbox2"></div>
+                <h2>Question 10</h2>
+                <h3>ANSWER</h3>
+                <span id="Q10"></span>
+                <select multiple>
+                    <option>Choose one...</option>
+                </select>
+                <br />
+                <br />
+                <br />
+                <input type='button' value='Job DONE' onclick="done()">
+			</form>
+        </main>
+
+        <footer>
+            <img id="imgs" src="Images/Foot.png" usemap="#FooterImg" alt="FooterImg" />
+            <map name="FooterImg">
+                <area shape="rect" coords="10,10,50,50" href="http://www.chess-stars.com/" title="Stars" alt="Stars" />
+                <area shape="rect" coords="70,10,109,50" href="https://www.albany.edu/" title="Albany" alt="Albany" />
+                <area shape="rect" coords="133,14,167,45" href="https://www.massachusetts.edu/" title="Massachussets" alt="Massachussets" />
+                <area shape="rect" coords="197,17,222,42" href="https://www.facebook.com/UniversityofMassachusetts/" title="Facebook" alt="Facebook" />
+            </map>
+        </footer>
+	</body>
+</html>
