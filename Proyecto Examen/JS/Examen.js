@@ -313,10 +313,10 @@ function creatDrop(i) {
 
 function checkQuestions() {
 
-    for (var i = 0; i < numQuest; i++) {
-        var Type = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
+    for (var i = 0; i < numQuestions; i++) {
+        var type = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
 
-        switch (Type) {
+        switch (type) {
             case "radio":
                 checkRadio(x);
                 break;
