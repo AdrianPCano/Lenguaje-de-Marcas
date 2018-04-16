@@ -79,6 +79,7 @@ function ExamStart() {
 function done() {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
+    document.getElementById("correct").innerHTML = correct;
 }
 
 function leerXML() {
@@ -447,7 +448,7 @@ function checkDropDown(i) {
     var choice = document.getElementsByName(i);
     for (var q = 0; q <choice.length; q++) {
         if (choice[q].selected) {
-            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Option")[document.getElementById(i + "select").value].getAttribute("correct");
+            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
 
             if (answ) {
                 correct++;
