@@ -347,8 +347,8 @@ function checkRadio(i) {
             var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
 
             if (answ) {
-                alert("bye");
                 correct++;
+                alert("bye");
             }
         }
     }
