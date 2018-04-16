@@ -3,7 +3,7 @@ var numQuestions = 0;
 var resultados = 0;
 
 window.onload = function() {
-    leer0XML();
+    leerXML();
 	document.getElementById("Form").style.display = "none";
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "none";
