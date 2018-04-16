@@ -80,8 +80,8 @@ function done(obj) {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
     document.getElementById("correct").innerHTML = correct; 
-    alert("hey");
-    checkQuestions();
+    checkRadio(x);
+    //checkQuestions();
 }
 
 function leerXML() {
