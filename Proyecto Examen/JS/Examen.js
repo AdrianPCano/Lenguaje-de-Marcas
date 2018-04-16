@@ -1,6 +1,6 @@
 var xmlDoc;
 var numQuestions = 0;
-var resultados = 0;
+var correct = 0;
 
 window.onload = function() {
     leerXML();
@@ -457,8 +457,8 @@ function printButton(){
     element.innerHTML = element.innerHTML + "<br/>";
     var textinp = document.createElement('button');
     textinp.setAttribute('Type', "button");
-    textinp.setAttribute('onclick', "checkPreguntas()");
-    textinp.innerHTML= "Obtén tu calificación: ";
+    textinp.setAttribute('onclick', "checkQuestions()");
+    textinp.innerHTML= "Your Results: ";
     element.appendChild(textinp);
 }
 
@@ -467,6 +467,6 @@ function printResults() {
     var div = document.createElement("div");
     element.appendChild(div);
     var label = document.createElement('label');
-    label.innerHTML = "Respuestas correctas:"+ " " + correct;
+    label.innerHTML = "Correct Answers:"+ " " + correct;
     div.appendChild(label);
 }
