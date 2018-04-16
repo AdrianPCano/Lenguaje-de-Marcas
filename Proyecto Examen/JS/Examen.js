@@ -60,6 +60,7 @@ function show() {
 	document.getElementById("instructions").style.display = "none";
 	document.getElementById("timer2").style.display = "block";
 	document.getElementById("Form").style.display = "block";
+	document.getElementById("Done").style.display = "block";
 }
 
 function ExamStart() {
