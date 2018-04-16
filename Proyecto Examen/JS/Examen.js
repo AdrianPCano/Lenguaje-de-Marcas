@@ -79,7 +79,7 @@ function ExamStart() {
 function done() {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
-    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("correct").innerHTML = "correct";
 }
 
 function leerXML() {
@@ -344,111 +344,6 @@ function checkRadio(x) {
             var SelQuestion = radis[a].getAttribute("value");
 
             var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
-
-            if (answ) {
-                document.getElementById("div"+x).style.backgroundColor="#00cc00";
-                correct++;
-            }
-            else {
-                document.getElementById("div"+x).style.backgroundColor="#cc0000";
-                
-            }
-
-            break;
-        }
-
-        if (isNull) {
-            document.getElementById("div" + x).style.backgroundColor = "#cc0000";
-        }
-
-    }
-}
-
-function checkCheckbox(x) {
-
-    var countCorrects = 0;
-    var countSelects= 0;
-    var countSelectsCorrects = 0;
-    var isNull = true;
-    var radis = document.getElementsByName(x);
-
-    for (var a = 0, length = radis.length; a < length; a++) {
-        var SelQuestion = radios[a].getAttribute("value");
-        if (xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct")) {
-            countCorrects += 1;
-        }
-
-    }
-
-    for (var a = 0, length = radis.length; a < length; a++) {
-
-        if (radis[a].checked)
-        {
-            var SelQuestion = radis[a].getAttribute("value");
-            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
-            
-            if (answ) {
-                document.getElementById("div"+x).style.backgroundColor="#00cc00";
-                correct++;
-                
-            }
-            else {
-                document.getElementById("div"+x).style.backgroundColor="#cc0000";
-            }
-
-            break;
-        }
-
-        if (isNull) {
-            document.getElementById("div" + x).style.backgroundColor = "#cc0000";
-        }
-    }
-}
-
-function checkText(x) {
-    try {
-        var userAnsw = document.getElementById(x + "text").value;
-    } catch (e) {
-    }
-    var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[0].innerHTML;
-
-    if (answ ==userAnsw) {
-        document.getElementById("div"+x).style.backgroundColor="#00cc00";
-        correct++;
-        
-    }
-    else {
-         document.getElementById("div"+x).style.backgroundColor="#cc0000";
-    }
-}
-
-function checkSelect(x) {
-
-    var checked = document.getElementsByName(x);
-
-    for (var a = 0, length = checked.length; a < length; a++) {
-        if (checked[a].selected)
-        {
-            var SelQuestion = document.getElementById(x + "select").value;
-            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
-
-        if (answ) {
-            document.getElementById("div"+x).style.backgroundColor="#00cc00";
-            correct++;   
-        }
-        else {
-            document.getElementById("div"+x).style.backgroundColor="#cc0000";
-        }
-            break;
-        }
-    }
-}
-
-function checkDropDown(i) {
-    var choice = document.getElementsByName(i);
-    for (var q = 0; q <choice.length; q++) {
-        if (choice[q].selected) {
-            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
 
             if (answ) {
                 correct++;
