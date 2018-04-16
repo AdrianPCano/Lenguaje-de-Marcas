@@ -1,6 +1,6 @@
 var xmlDoc;
 var numQuestions = 0;
-var resultados = 0;
+var correct = 0;
 
 window.onload = function() {
     leerXML();
