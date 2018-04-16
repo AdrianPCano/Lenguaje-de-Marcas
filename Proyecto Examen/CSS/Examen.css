@@ -74,6 +74,11 @@ section {
     background: linear-gradient(#fac754, #f8ac00);
 }
 
+#Done {
+    margin-top: 20px;
+    text-align: center;
+}
+
 #Form {
     background: url('../Images/back.jpg');
 }
