@@ -125,7 +125,7 @@ function printQuestions() {
 
 function creatRadio(i) {
 
-    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var answer = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
 
     var div = document.createElement("div");
@@ -166,7 +166,7 @@ function creatRadio(i) {
 
 }
 function creatCheck(i) {
-    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var answer = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
 
     var div = document.createElement("div");
@@ -199,7 +199,7 @@ function creatCheck(i) {
 }
 
 function creatText(i) {
-    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var answer = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
 
     var div = document.createElement("div");
@@ -230,7 +230,7 @@ function creatText(i) {
 }
 
 function creatSelect(i) {
-    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var answer = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
 
     var div = document.createElement("div");
@@ -268,7 +268,7 @@ function creatSelect(i) {
 }
 
 function creatDrop(i) {
-    var numSol = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("Form");
 
     var div = document.createElement("div");
