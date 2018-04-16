@@ -80,6 +80,7 @@ function done(obj) {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
     document.getElementById("correct").innerHTML = correct; 
+    alert("hey");
     checkQuestions();
 }
 
@@ -317,19 +318,19 @@ function checkQuestions() {
 
         switch (Type) {
             case "radio":
-                checkRadio(i);
+                checkRadio(x);
                 break;
             case "checkbox":
-                checkCheckbox(i);
+                checkCheckbox(x);
                 break;
             case "text":
-                checkText(i);
+                checkText(x);
                 break;
             case "multipleSelect":
-                checkSelect(i);
+                checkSelect(x);
                 break;
             case "drop":
-                checkDrop(i);
+                checkDrop(x);
                 break;
         }
     }
