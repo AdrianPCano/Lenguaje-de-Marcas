@@ -1,6 +1,6 @@
 var xmlDoc;
 var numQuestions = 0;
-var correct = 0;
+var resultados = 0;
 
 window.onload = function() {
     leer0XML();
@@ -99,9 +99,9 @@ function printQuestions() {
 
     for (var i = 0; i < numQuestions; i++) {
 
-        var Type = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Type')[0].innerHTML;
+        var type = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('type')[0].innerHTML;
 
-        switch (Type) {
+        switch (type) {
             case "radio":
                 creatRadio(i);
                 break;
@@ -150,7 +150,7 @@ function creatRadio(i) {
         var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
         var radioBut = document.createElement("input");
 
-        radioBut.setAttribute("Type", "radio");
+        radioBut.setAttribute("type", "radio");
         radioBut.setAttribute("name", i);
         radioBut.setAttribute("value", q);
         radioBut.setAttribute('id', q + "radio");
@@ -184,7 +184,7 @@ function creatCheck(i) {
         var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
         var check = document.createElement("input");
 
-        check.setAttribute("Type", "checkbox");
+        check.setAttribute("type", "checkbox");
         check.setAttribute("name", i);
         check.setAttribute("value", q);
         check.setAttribute('id', q + "checkbox");
@@ -216,7 +216,7 @@ function creatText(i) {
         var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
         var text = document.createElement("input");
 
-        text.setAttribute("Type", "text");
+        text.setAttribute("type", "text");
         text.setAttribute("name", i);
         text.setAttribute('id', i + "text");
         div.appendChild(text);
@@ -306,9 +306,9 @@ function creatDrop(i) {
 function checkQuestions() {
 
     for (var i = 0; i < numQuest; i++) {
-        var tipo = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
+        var tipo = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("type")[0].innerHTML;
 
-        switch (Type) {
+        switch (type) {
             case "radio":
                 checkRadio(i);
                 break;
@@ -456,7 +456,7 @@ function printButton(){
     var element = document.getElementById("Form");
     element.innerHTML = element.innerHTML + "<br/>";
     var textinp = document.createElement('button');
-    textinp.setAttribute('Type', "button");
+    textinp.setAttribute('type', "button");
     textinp.setAttribute('onclick', "checkPreguntas()");
     textinp.innerHTML= "Obtén tu calificación: ";
     element.appendChild(textinp);
