@@ -64,6 +64,10 @@ section {
     background: url('../Images/back.jpg');
 }
 
+.Question {
+    border: 2px solid;
+}
+
 #Done:hover {
 
     text-decoration: none;
@@ -75,7 +79,9 @@ section {
 }
 
 #Done {
+    padding: .8em 1.5em;
     margin-top: 20px;
+    text-align: center;
     border: solid;
     border-radius: 3px;
 }
