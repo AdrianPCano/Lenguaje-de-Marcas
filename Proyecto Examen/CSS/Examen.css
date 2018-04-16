@@ -68,6 +68,14 @@ section {
     border: 2px solid;
 }
 
+.img {
+    height: 50px;
+    width: 50px;
+    vertical-align: right;
+    margin-right: 25px;
+    margin-left: 30px;
+}
+
 #Done:hover {
 
     text-decoration: none;
