@@ -123,6 +123,83 @@ function printQuestions() {
     }
 }
 
+function creatRadio(i) {
+
+    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var element = document.getElementById("Form");
+
+    var div = document.createElement("div");
+    div.setAttribute("id", "div" + i);
+    div.setAttribute("class", "question");
+    element.appendChild(div);
+
+    var statement = document.createElement("label");
+    statement.setAttribute('for', i);
+    statement.innerHTML = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('statement')[0].innerHTML + "<br>";
+
+    var image = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('img')[0];
+    if (image){
+        var img = document.createElement("img");
+        img.setAttribute("src", xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('img')[0].innerHTML);
+        div.appendChild(img)
+    }
+    div.appendChild(statement);
+    
+    for (var q = 0; q < answer; q++) {
+
+        var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
+        var radioBut = document.createElement("input");
+
+        radioBut.setAttribute("Type", "radio");
+        radioBut.setAttribute("name", i);
+        radioBut.setAttribute("value", q);
+        radioBut.setAttribute('id', q + "radio");
+        div.appendChild(radioBut);
+
+        var label = document.createElement('label');
+        label.setAttribute('for', i);
+        label.innerHTML = question + "<br>";
+
+        div.appendChild(label);
+    }
+
+
+}
+
+function creatCheck(i) {
+    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var element = document.getElementById("Form");
+
+    var div = document.createElement("div");
+    div.setAttribute("id", "div" + i);
+    div.setAttribute("class", "Question");
+    element.appendChild(div);
+
+    var statement = document.createElement("label");
+    statement.setAttribute('for', i);
+    statement.innerHTML = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('statement')[0].innerHTML + "<br>";
+    div.appendChild(statement);
+
+    for (var q = 0; q < answer; q++) {
+
+        var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
+        var check = document.createElement("input");
+
+        check.setAttribute("Type", "checkbox");
+        check.setAttribute("name", i);
+        check.setAttribute("value", q);
+        check.setAttribute('id', q + "checkbox");
+        div.appendChild(check);
+
+        var label = document.createElement('label');
+        label.setAttribute('for', i);
+        label.innerHTML = question + "<br>";
+
+        div.appendChild(label);
+    }
+}
+
+
 function creatText(i) {
     var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
