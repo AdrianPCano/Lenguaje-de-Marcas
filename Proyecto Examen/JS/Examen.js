@@ -130,7 +130,7 @@ function creatRadio(i) {
 
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
-    div.setAttribute("class", "question");
+    div.setAttribute("class", "Question");
     element.appendChild(div);
 
     var statement = document.createElement("label");
@@ -152,8 +152,8 @@ function creatRadio(i) {
 
         radioBut.setAttribute("Type", "radio");
         radioBut.setAttribute("name", i);
-        radioBut.setAttribute("value", q);
-        radioBut.setAttribute('id', q + "radio");
+        radioBut.setAttribute("value", i);
+        radioBut.setAttribute('id', i + "radio");
         div.appendChild(radioBut);
 
         var label = document.createElement('label');
@@ -165,7 +165,6 @@ function creatRadio(i) {
 
 
 }
-
 function creatCheck(i) {
     var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
@@ -195,6 +194,37 @@ function creatCheck(i) {
         label.setAttribute('for', i);
         label.innerHTML = question + "<br>";
 
+        div.appendChild(label);
+    }
+}
+
+function creatText(i) {
+    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
+    var element = document.getElementById("Form");
+
+    var div = document.createElement("div");
+    div.setAttribute("id", "div" + i);
+    div.setAttribute("class", "Question");
+    element.appendChild(div);
+
+    var statement = document.createElement("label");
+    statement.setAttribute('for', i);
+    statement.innerHTML = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('statement')[0].innerHTML + "<br>";
+    div.appendChild(statement);
+
+    for (var q = 0; q < answer; q++) {
+
+        var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
+        var text = document.createElement("input");
+
+        text.setAttribute("Type", "text");
+        text.setAttribute("name", i);
+        text.setAttribute('id', i + "text");
+        div.appendChild(text);
+
+        var label = document.createElement('label');
+        label.setAttribute('for', i);
+        label.innerHTML = "<br>";
         div.appendChild(label);
     }
 }
@@ -272,5 +302,163 @@ function creatDrop(i) {
 
     label.innerHTML = "<br>";
 
+    div.appendChild(label);
+}
+
+function checkQuestions() {
+
+    for (var i = 0; i < numQuest; i++) {
+        var tipo = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
+
+        switch (Type) {
+            case "radio":
+                checkRadio(i);
+                break;
+            case "checkbox":
+                checkCheckbox(i);
+                break;
+            case "text":
+                checkText(i);
+                break;
+            case "multipleSelect":
+                checkSelect(i);
+                break;
+            case "drop":
+                checkDrop(i);
+                break;
+        }
+    }
+}
+
+function checkRadio(x) {
+
+    var radis = document.getElementsByName(x);
+    var isNull = true;
+    for (var a = 0, length = radis.length; a < length; a++) {
+
+        if (radios[z].checked) 
+        {
+            var SelQuestion = radis[a].getAttribute("value");
+
+            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
+
+            if (answ) {
+                document.getElementById("div"+x).style.backgroundColor="#00cc00";
+                correct++;
+            }
+            else {
+                document.getElementById("div"+x).style.backgroundColor="#cc0000";
+                
+            }
+
+            break;
+        }
+
+        if (isNull) {
+            document.getElementById("div" + x).style.backgroundColor = "#cc0000";
+        }
+
+    }
+}
+
+function checkCheckbox(x) {
+
+    var countCorrects = 0;
+    var countSelects= 0;
+    var countSelectsCorrects = 0;
+    var isNull = true;
+    var radis = document.getElementsByName(x);
+
+    for (var a = 0, length = radis.length; a < length; a++) {
+        var SelQuestion = radios[a].getAttribute("value");
+        if (xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct")) {
+            countCorrects += 1;
+        }
+
+    }
+
+    for (var a = 0, length = radis.length; a < length; a++) {
+
+        if (radis[a].checked)
+        {
+            var SelQuestion = radis[a].getAttribute("value");
+            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
+            
+            if (answ) {
+                document.getElementById("div"+x).style.backgroundColor="#00cc00";
+                correct++;
+                
+            }
+            else {
+                document.getElementById("div"+x).style.backgroundColor="#cc0000";
+            }
+
+            break;
+        }
+
+        if (isNull) {
+            document.getElementById("div" + x).style.backgroundColor = "#cc0000";
+        }
+    }
+}
+
+function checkText(x) {
+    try {
+        var userAnsw = document.getElementById(x + "text").value;
+    } catch (e) {
+    }
+    var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[0].innerHTML;
+
+    if (answ ==userAnsw) {
+        document.getElementById("div"+x).style.backgroundColor="#00cc00";
+        correct++;
+        
+    }
+    else {
+         document.getElementById("div"+x).style.backgroundColor="#cc0000";
+    }
+}
+
+function checkSelect(x) {
+
+    var checked = document.getElementsByName(x);
+
+    for (var a = 0, length = checked.length; a < length; a++) {
+        if (checked[a].selected)
+        {
+            var SelQuestion = document.getElementById(x + "select").value;
+            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
+
+        if (answ) {
+            document.getElementById("div"+x).style.backgroundColor="#00cc00";
+            correct++;   
+        }
+        else {
+            document.getElementById("div"+x).style.backgroundColor="#cc0000";
+        }
+            break;
+        }
+    }
+}
+
+function checkDropDown(i) {
+    var choice = document.getElementsByName(i);
+    for (var q = 0; q <choice.length; q++) {
+        if (choice[q].selected) {
+            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Option")[document.getElementById(i + "select").value].getAttribute("correct");
+
+            if (answ) {
+                correct++;
+            }
+        }
+    }
+}
+
+function printResults() {
+    var element = document.getElementById("Form");
+    var div = document.createElement("div");
+    element.appendChild(div);
+    var label = document.createElement('label');
+    label.innerHTML = "Correct Answers:"+ " " + correct;
     div.appendChild(label);
 }
