@@ -7,7 +7,7 @@ window.onload = function() {
 	document.getElementById("Form").style.display = "none";
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "none";
-	var threeMinutes = 60 * 1,
+	var threeMinutes = 05 * 1,
         display = document.querySelector('#time');
     startTimer1(threeMinutes, display);
 
