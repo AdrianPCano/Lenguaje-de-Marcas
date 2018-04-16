@@ -74,6 +74,10 @@ section {
     background: linear-gradient(#fac754, #f8ac00);
 }
 
+#Done, #Form {
+    display: inline-block;
+}
+
 #Form {
     background: url('../Images/back.jpg');
 }
