@@ -79,7 +79,7 @@ function ExamStart() {
 function done() {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
-    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("correct").innerHTML = "correct";
 }
 
 function leerXML() {
@@ -342,10 +342,11 @@ function checkRadio(x) {
         if (radios[z].checked) 
         {
             var SelQuestion = radis[a].getAttribute("value");
-
+            alert("hola");
             var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
 
             if (answ) {
+                alert("bye");
                 correct++;
             }
         }
