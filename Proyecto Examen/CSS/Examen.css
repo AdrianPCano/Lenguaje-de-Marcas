@@ -71,7 +71,7 @@ section {
     margin-bottom: 15px;
 }
 
-.image {
+#image {
     height: 50px;
     width: 50px;
     vertical-align: right;
