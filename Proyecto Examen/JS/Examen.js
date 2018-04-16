@@ -339,7 +339,7 @@ function checkRadio(x) {
     var isNull = true;
     for (var a = 0, length = radis.length; a < length; a++) {
 
-        if (radios[z].checked) 
+        if (radis[a].checked) 
         {
             var SelQuestion = radis[a].getAttribute("value");
             alert("hola");
