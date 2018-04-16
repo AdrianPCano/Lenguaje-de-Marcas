@@ -79,7 +79,8 @@ function ExamStart() {
 function done() {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
-    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("correct").innerHTML = correct; 
+    checkQuestions();
 }
 
 function leerXML() {
@@ -249,6 +250,7 @@ function creatSelect(i) {
     var select = document.createElement("select");
     select.setAttribute("id", i + "select");
     select.setAttribute("name", i);
+    select.setAttribute("multiple", "");
     div.appendChild(select);
 
     for (var q = 0; q < answer; q++) {
@@ -311,7 +313,7 @@ function creatDrop(i) {
 function checkQuestions() {
 
     for (var i = 0; i < numQuest; i++) {
-        var tipo = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
+        var Type = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName("Type")[0].innerHTML;
 
         switch (Type) {
             case "radio":
@@ -336,11 +338,9 @@ function checkQuestions() {
 function checkRadio(x) {
 
     var radis = document.getElementsByName(x);
-    var isNull = true;
     for (var a = 0, length = radis.length; a < length; a++) {
 
-        if (radis[a].checked) 
-        {
+        if (radis[a].checked) {
             var SelQuestion = radis[a].getAttribute("value");
             alert("hola");
             var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
