@@ -228,8 +228,3 @@ function creatDrop(i) {
 
     div.appendChild(label);
 }
-           checkDrop(i);
-                break;
-        }
-    }
-}
