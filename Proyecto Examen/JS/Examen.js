@@ -5,6 +5,7 @@ var correct = 0;
 window.onload = function() {
     leerXML();
 	document.getElementById("Form").style.display = "none";
+	document.getElementById("Done").style.display = "none";
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "none";
 	var threeMinutes = 05 * 1,
