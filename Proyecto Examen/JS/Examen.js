@@ -344,7 +344,7 @@ function checkRadio(i) {
         if (radis[a].checked) {
             var SelQuestion = radis[a].getAttribute("value");
             alert("hola");
-            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
+            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
 
             if (answ) {
                 alert("bye");
