@@ -319,8 +319,9 @@ function checkQuestions() {
         switch (type) {
             case "radio":
                 checkRadio(x);
+                alert("1");
                 break;
-            case "checkbox":
+            /*case "checkbox":
                 checkCheckbox(x);
                 break;
             case "text":
@@ -331,7 +332,7 @@ function checkQuestions() {
                 break;
             case "drop":
                 checkDrop(x);
-                break;
+                break;*/
         }
     }
 }
