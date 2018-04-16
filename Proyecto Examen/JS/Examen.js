@@ -199,37 +199,6 @@ function creatCheck(i) {
     }
 }
 
-
-function creatText(i) {
-    var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
-    var element = document.getElementById("Form");
-
-    var div = document.createElement("div");
-    div.setAttribute("id", "div" + i);
-    div.setAttribute("class", "Question");
-    element.appendChild(div);
-
-    var statement = document.createElement("label");
-    statement.setAttribute('for', i);
-    statement.innerHTML = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('statement')[0].innerHTML + "<br>";
-    div.appendChild(statement);
-
-    for (var q = 0; q < answer; q++) {
-
-        var question = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer')[q].innerHTML;
-        var text = document.createElement("input");
-
-        text.setAttribute("Type", "text");
-        text.setAttribute("name", i);
-        text.setAttribute('id', i + "text");
-        div.appendChild(text);
-
-        var label = document.createElement('label');
-        label.setAttribute('for', i);
-        label.innerHTML = "<br>";
-        div.appendChild(label);
-    }
-}
 function creatSelect(i) {
     var numSol = xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Answer').length;
     var element = document.getElementById("Form");
