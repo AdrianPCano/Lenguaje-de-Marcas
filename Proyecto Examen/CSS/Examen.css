@@ -65,15 +65,7 @@ section {
 }
 
 .Question {
-    border: 2px solid;
-}
-
-image {
-    height: 50px;
-    width: 50px;
-    vertical-align: right;
-    margin-right: 25px;
-    margin-left: 30px;
+    border: 2px #a3c2c2;
 }
 
 #Done:hover {
