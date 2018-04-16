@@ -67,10 +67,7 @@ section {
 .Question {
     border: 2px solid;
     border-color: #a3c2c2;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 10;
 }
 
 #Done:hover {
