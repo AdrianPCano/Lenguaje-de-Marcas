@@ -68,7 +68,7 @@ section {
     border: 2px solid;
 }
 
-#img {
+image {
     height: 50px;
     width: 50px;
     vertical-align: right;
