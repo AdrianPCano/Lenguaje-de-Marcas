@@ -52,10 +52,6 @@ section {
     font-size: 2em;
 }
 
-#Form {
-    margin-bottom: 20%;
-}
-
 #instructions, #Form {
     text-align: center;
     border: solid;
