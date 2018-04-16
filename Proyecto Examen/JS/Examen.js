@@ -380,7 +380,7 @@ function checkCheckbox(x) {
         if (radis[a].checked)
         {
             var SelQuestion = radis[a].getAttribute("value");
-            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correcto");
+            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
             
             if (answ) {
                 document.getElementById("div"+x).style.backgroundColor="#00cc00";
@@ -425,7 +425,7 @@ function checkSelect(x) {
         if (checked[a].selected)
         {
             var SelQuestion = document.getElementById(x + "select").value;
-            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correcto");
+            var answ = xmlDoc.getElementsByTagName("Question")[x].getElementsByTagName("Answer")[SelQuestion].getAttribute("correct");
 
         if (answ) {
             document.getElementById("div"+x).style.backgroundColor="#00cc00";
@@ -450,16 +450,6 @@ function checkDropDown(i) {
             }
         }
     }
-}
-
-function printButton(){
-    var element = document.getElementById("Form");
-    element.innerHTML = element.innerHTML + "<br/>";
-    var textinp = document.createElement('button');
-    textinp.setAttribute('Type', "button");
-    textinp.setAttribute('onclick', "checkQuestions()");
-    textinp.innerHTML= "Your Results: ";
-    element.appendChild(textinp);
 }
 
 function printResults() {
