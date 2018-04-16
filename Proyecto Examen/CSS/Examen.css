@@ -70,6 +70,12 @@ section {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.Answer {
+    border: 2px solid;
+    border-color: #a3c2c2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 #Done:hover {
 
