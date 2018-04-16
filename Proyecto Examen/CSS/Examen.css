@@ -65,8 +65,10 @@ section {
 }
 
 .Question {
-    border: 2px #a3c2c2;
+    border: 2px solid;
+    border-color: #a3c2c2;
 }
+
 
 #Done:hover {
 
