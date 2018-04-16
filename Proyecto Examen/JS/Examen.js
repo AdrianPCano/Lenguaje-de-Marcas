@@ -275,7 +275,7 @@ function creatDrop(i) {
 
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
-    div.setAttribute("class", "question");
+    div.setAttribute("class", "Question");
     form.appendChild(div);
 
     var title = document.createElement('label');
