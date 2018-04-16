@@ -5,7 +5,7 @@ var correct = 0;
 window.onload = function() {
     leerXML();
 	document.getElementById("Form").style.display = "none";
-	document.getElementById("Done").style.display = "none";
+    document.getElementById("Done").style.display = "none";
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "none";
 	var threeMinutes = 05 * 1,
@@ -61,7 +61,7 @@ function show() {
 	document.getElementById("instructions").style.display = "none";
 	document.getElementById("timer2").style.display = "block";
 	document.getElementById("Form").style.display = "block";
-	document.getElementById("Done").style.display = "block";
+    document.getElementById("Done").style.display = "block";
 }
 
 function ExamStart() {
@@ -133,6 +133,7 @@ function creatRadio(i) {
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
     div.setAttribute("class", "Question");
+    div.setAttribute("class", "image");
     element.appendChild(div);
 
     var statement = document.createElement("label");
