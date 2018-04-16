@@ -133,7 +133,7 @@ function creatRadio(i) {
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
     div.setAttribute("class", "Question");
-    div.setAttribute("class", "image");
+    div.setAttribute("id", "image");
     element.appendChild(div);
 
     var statement = document.createElement("label");
