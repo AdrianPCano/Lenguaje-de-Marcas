@@ -52,7 +52,11 @@ section {
     font-size: 2em;
 }
 
-#instructions, #exam {
+#Form {
+    margin-bottom: 20%;
+}
+
+#instructions, #Form {
     text-align: center;
     border: solid;
     border-radius: 3px;
@@ -64,11 +68,11 @@ section {
     background: url('../Images/back.jpg');
 }
 
-#exam {
+#Form {
     background: url('../Images/back.jpg');
 }
 
-#exam h2 {
+#Form h2 {
     text-align: left;
     margin-left: 150px;
 }

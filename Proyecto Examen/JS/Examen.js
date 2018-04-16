@@ -90,7 +90,7 @@ function leerXML() {
             printButton();
         }
     };
-    xhttp.open("GET", "xml/Examen.xml", true);
+    xhttp.open("GET", "Xml/Examen.xml", true);
     xhttp.send();
 
 }
@@ -342,7 +342,7 @@ function checkRadio(x) {
 
             if (answ) {
                 document.getElementById("div"+x).style.backgroundColor="#00cc00";
-                results++;
+                correct++;
             }
             else {
                 document.getElementById("div"+x).style.backgroundColor="#cc0000";
@@ -384,7 +384,7 @@ function checkCheckbox(x) {
             
             if (answ) {
                 document.getElementById("div"+x).style.backgroundColor="#00cc00";
-                resultados++;
+                correct++;
                 
             }
             else {
@@ -409,7 +409,7 @@ function checkText(x) {
 
     if (answ ==userAnsw) {
         document.getElementById("div"+x).style.backgroundColor="#00cc00";
-        resultados++;
+        correct++;
         
     }
     else {
@@ -429,12 +429,25 @@ function checkSelect(x) {
 
         if (answ) {
             document.getElementById("div"+x).style.backgroundColor="#00cc00";
-            results++;   
+            correct++;   
         }
         else {
             document.getElementById("div"+x).style.backgroundColor="#cc0000";
         }
             break;
+        }
+    }
+}
+
+function checkDropDown(i) {
+    var choice = document.getElementsByName(i);
+    for (var q = 0; q <choice.length; q++) {
+        if (choice[q].selected) {
+            var answ = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Option")[document.getElementById(i + "select").value].getAttribute("correct");
+
+            if (answ) {
+                correct++;
+            }
         }
     }
 }
@@ -449,11 +462,11 @@ function printButton(){
     element.appendChild(textinp);
 }
 
-function printResultados() {
+function printResults() {
     var element = document.getElementById("Form");
     var div = document.createElement("div");
     element.appendChild(div);
     var label = document.createElement('label');
-    label.innerHTML = "Respuestas correctas:"+ " " + results;
+    label.innerHTML = "Respuestas correctas:"+ " " + correct;
     div.appendChild(label);
 }

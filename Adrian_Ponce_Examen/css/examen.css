@@ -48,6 +48,7 @@ article {
 
 img {
     border: 1px solid ;
+    border-style: double;
     margin-top: 15px;
     margin-left: 150px;
     padding: 15px;
@@ -118,7 +119,7 @@ ul {
     list-style-type: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content li:hover {
     background-color: blue;
     text-decoration: none;
 }
