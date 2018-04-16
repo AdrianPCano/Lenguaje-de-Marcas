@@ -79,7 +79,7 @@ function ExamStart() {
 function done() {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
-    document.getElementById("correct").innerHTML = "correct";
+    document.getElementById("correct").innerHTML = correct;
 }
 
 function leerXML() {
@@ -455,13 +455,4 @@ function checkDropDown(i) {
             }
         }
     }
-}
-
-function printResults() {
-    var element = document.getElementById("Form");
-    var div = document.createElement("div");
-    element.appendChild(div);
-    var label = document.createElement('label');
-    label.innerHTML = "Correct Answers:"+ " " + correct;
-    div.appendChild(label);
 }
