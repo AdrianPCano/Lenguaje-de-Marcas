@@ -80,8 +80,7 @@ function done(obj) {
 	document.getElementById("timer2").style.display = "none";
 	document.getElementById("Puntuacion").style.display = "block";
     document.getElementById("correct").innerHTML = correct; 
-    checkRadio(x);
-    //checkQuestions();
+    checkQuestions();
 }
 
 function leerXML() {
@@ -318,28 +317,28 @@ function checkQuestions() {
 
         switch (type) {
             case "radio":
-                checkRadio(x);
+                checkRadio(i);
                 alert("1");
                 break;
             /*case "checkbox":
-                checkCheckbox(x);
+                checkCheckbox(i);
                 break;
             case "text":
-                checkText(x);
+                checkText(i);
                 break;
             case "multipleSelect":
-                checkSelect(x);
+                checkSelect(i);
                 break;
             case "drop":
-                checkDrop(x);
+                checkDrop(i);
                 break;*/
         }
     }
 }
 
-function checkRadio(x) {
+function checkRadio(i) {
 
-    var radis = document.getElementsByName(x);
+    var radis = document.getElementsByName(i);
     for (var a = 0, length = radis.length; a < length; a++) {
 
         if (radis[a].checked) {
