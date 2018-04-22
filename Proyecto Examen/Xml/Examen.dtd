@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Questions (Question+)>
+<!ELEMENT Question (Type, statement, img?, Answer*)>
+
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT statement (#PCDATA)>
+<!ELEMENT img (#PCDATA)>
+<!ELEMENT Answer (#PCDATA)>
+<!ATTLIST Answer correct CDATA #IMPLIED>
