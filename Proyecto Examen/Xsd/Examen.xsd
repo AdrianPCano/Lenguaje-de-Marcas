@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xs:element name="Questions">
+  <xs:element name="Questions">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Question" maxOccurs="unbounded" minOccurs="0">
@@ -8,8 +8,8 @@
             <xs:sequence>
               <xs:element type="xs:string" name="Type"/>
               <xs:element type="xs:string" name="statement"/>
-              <xs:element name="img" maxOccurs="unbounded" minOccurs="0"/>
-              <xs:element name="Question" maxOccurs="unbounded" minOccurs="0">
+              <xs:element type="xs:string" name="img" minOccurs="0"/>
+              <xs:element name="Answer" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
