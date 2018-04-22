@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Examen.xsd">
+    <Question>
+        <Type>text</Type>
+        <statement>Who is the current Champion of the World?</statement>
+        <Answer correct="true">MAGNUS CARLSEN</Answer>
+    </Question>
+    <Question>
+        <Type>radio</Type>
+        <statement>What is the best move?</statement>
+        <img>Images/problem1.jpg</img>
+        <Answer correct="true">The best move is c8=N</Answer>
+        <Answer>The best move is c8=Q</Answer>
+        <Answer>The best move is Be3</Answer>
+        <Answer>The best move is c8=R</Answer>
+    </Question>
+    <Question> 
+        <Type>radio</Type>
+        <statement>What is the best move?</statement>
+        <img>Images/problem2.jpg</img>
+        <Answer>The best move is Ne4</Answer>
+        <Answer correct="true">The best move is Kh2</Answer>
+        <Answer>The best move is Re4</Answer>
+        <Answer>None of the others</Answer>
+    </Question>
+    <Question>
+        <Type>multipleSelect</Type>
+        <statement>What kind of castling is right?</statement>
+        <Answer>Castling right</Answer>
+        <Answer correct="true">Castling short </Answer>
+        <Answer correct="true">Castling long </Answer>
+        <Answer>Castling left</Answer>
+    </Question>
+    <Question>
+        <Type>checkbox</Type>
+        <statement>Select all the correct answers</statement>
+        <Answer correct="true">There are 3 phases in a chess game (Opening, Middlegame and Endgame)</Answer>
+        <Answer>There are 3 phases in a chess game (Opening, Tacticgame and Positionalgame)</Answer>
+        <Answer correct="true">The Opening is the most important phase</Answer>
+        <Answer>None of the 3 phases really matter</Answer>
+    </Question>
+    <Question>
+        <Type>text</Type>
+        <statement>Who is going to challenge Magnus Carlsen for the title of World Champion 2018?</statement>
+        <Answer correct="true">FABIANO CARUANA</Answer>
+    </Question>
+    <Question>
+        <Type>drop</Type>
+        <statement>How many pieces are there on a chessboard?</statement>
+        <Answer>16</Answer>
+        <Answer correct="true">32</Answer>
+        <Answer>64</Answer>
+        <Answer>None of the others</Answer>
+    </Question>
+    <Question>
+        <Type>multipleSelect</Type>
+        <statement>Which of these moves are considered legal in the first move?</statement>
+        <Answer correct="true">Nf3</Answer>
+        <Answer>Castling</Answer>
+        <Answer correct="true">e4</Answer>
+        <Answer>e4xd5</Answer>
+    </Question>
+    <Question>
+        <Type>checkbox</Type>
+        <statement>Select all the correct answers</statement>
+        <Answer>when a pawn reaches the last square he can become a king</Answer>
+        <Answer correct="true">when a pawn reaches the last square it can be converted into everything except the king</Answer>
+        <Answer correct="true">There are 64 squares in total</Answer>
+        <Answer>A pawn cannot be ceonverted into anything</Answer>
+    </Question>
+    <Question>
+        <Type>drop</Type>
+        <statement>In what year did Magnus Carlsen become World Champion?</statement>
+        <Answer correct="true">2013</Answer>
+        <Answer>2017</Answer>
+        <Answer>2016</Answer>
+        <Answer>1998</Answer>
+    </Question>
+</Questions>
+

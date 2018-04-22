@@ -3,7 +3,7 @@ var numQuestions = 0;
 var correct = 0;
 
 window.onload = function() {
-    leerXML();
+    leer0XML();
 	document.getElementById("Form").style.display = "none";
     document.getElementById("Done").style.display = "none";
 	document.getElementById("timer2").style.display = "none";
@@ -353,3 +353,7 @@ function checkRadio(i) {
         }
     }
 }
+<<<<<<< Updated upstream
+=======
+}
+>>>>>>> Stashed changes
