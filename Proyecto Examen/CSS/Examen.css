@@ -52,10 +52,6 @@ section {
     font-size: 2em;
 }
 
-#Form {
-    margin-bottom: 20%;
-}
-
 #instructions, #Form {
     text-align: center;
     border: solid;
@@ -66,6 +62,30 @@ section {
 
 #instructions {
     background: url('../Images/back.jpg');
+}
+
+.Question {
+    border: 2px solid;
+    border-color: #a3c2c2;
+    padding: 10;
+}
+
+#Done:hover {
+
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#fac754, #f8ac00);
+}
+
+#Done {
+    padding: .8em 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    border: solid;
+    border-radius: 3px;
 }
 
 #Form {
