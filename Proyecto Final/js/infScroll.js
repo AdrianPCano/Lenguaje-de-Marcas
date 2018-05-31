@@ -1,5 +1,4 @@
 var NOTICIA1;
-var NOTICIA2;
 
 window.onload = function() {
 
@@ -7,7 +6,7 @@ window.onload = function() {
       //En este punto el objeto jsonObject corresponde al fichero
      
       NOTICIA1 = jsonObject;
-      console.log(NOTICIA1);
+
     });
 
    $.getJSON( "./json/news2.json", function( jsonObject ) {
