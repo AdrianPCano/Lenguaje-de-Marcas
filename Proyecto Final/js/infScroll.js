@@ -31,6 +31,6 @@ $(window).on("scroll", function() {
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
   $.each( jsonObject, function( i, news ) {
-    $("#out").append( "<h1 id='" + i + "'>" + news.titular+ "</h1>" + "<p>" + news.descripcion + "</p>" + "<p>" + news.descripcion + "</p>"  );
+    $("#see").append( "<h1 id='" + i + "'>" + news.titular+ "</h1>" + "<p>" + news.descripcion + "</p>" + "<img>" + news.img + "</img>"  );
   }); 
 }
