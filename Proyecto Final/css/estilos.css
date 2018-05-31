@@ -35,9 +35,7 @@
 	width: 40%;
 }
 
-.post .thumb img {
-	width: 100%;
-}
+
 
 .post .contenedor-botones {
 	width: 100%;
@@ -71,4 +69,7 @@ aside img {
 aside div {
 	background-color:  #b3ffb3;
 	border: 2px solid;
+}
+
+
 }

@@ -1,162 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>Project</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
-	<link rel="stylesheet"  href="css/bootstrap.min.css">
-	<link rel="stylesheet"  href="css/estilos.css">
-<body>
-	<header>
-		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-AP">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Project</title>
+		<link rel="stylesheet"  href="css/bootstrap.min.css">
+	    <link rel="stylesheet"  href="css/estilos.css">
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/jquery-3.3.1.min.js"></script>
+	    <script src="js/bootstrap.js"></script>
+		<script src="js/infScroll.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-AP">
 						<span class="sr-only"> Desplegar / Ocultar  Menu</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand">NewsWorld</a>
-				</div>
-				<!--Start Menu -->
-				<div class="collapse navbar-collapse" id="navegacion-AP">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-								Categorias <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Deportes</a></li>
-								<li ><a href="#">Actualidad</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Creador</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-
-					<form class="navbar-form navbar-right" role ="search">
-						<div class="form-group">
-							<input type="text" name="form-control" placeholder="search">
-						</div>
-						<button type="submit" class="btn btn-primary">
-							<span class="glyphicon glyphicon-search"></span>
 						</button>
-					</form>
+						<a href="#" class="navbar-brand">NewsWorld</a>
+					</div>
+					<!--Start Menu -->
+					<div class="collapse navbar-collapse" id="navegacion-AP">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Inicio</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+									Categorias <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Deportes</a></li>
+									<li><a href="#">Actualidad</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Creador</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+						<form class="navbar-form navbar-right" role ="search">
+							<div class="form-group">
+								<input type="text" name="form-control" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</form>
+					</div>
 				</div>
+			</nav>
+		</header>
+		<section class="jumbotron">
+			<div class="container">
+				<h1 class="title">NewsWorld</h1>
+				<p>Pagina Web de noticias.</p>
 			</div>
-		</nav>
-	</header>
-	<section class="jumbotron">
-		<div class="container">
-			<h1 class="title">NewsWorld</h1>
-			<p>Pagina Web de noticias.</p>
-		</div>
-	</section>
-	<section class="main container">
-		<div class="row">
-			<section class="posts col-md-9">
-				<div class="miga-de-pan">
-					<ol class="breadcrumb">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Categorias</a></li>
-						<li class="active">Animales</li>
-					</ol>
-				</div>
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
-					</a>
-					<h2 class="post-title">
-						<a href="#">EL tigre indefenso.</a>
-					</h2>
-					<p><span class="post-fecha"> 13 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
-					<p class="post-contenido text-justify">
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						EL tigre albino no es un buen depredador.asfjbjhasbfjbasfjbasfjobasjhbasfhkbasfhk
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						abfbassabas 
-						fjsanjfasnsaf
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH 
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-					</p>
-
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-primary">Leer Mas</a>
+		</section>
+		<section class="main container">
+			<div class="row">
+				<section class="posts col-md-9">
+					<div class="miga-de-pan">
+						<ol class="breadcrumb">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Categorias</a></li>
+							<li class="active">Animales</li>
+						</ol>
 					</div>
-				</article>	
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
-					</a>
-					<h2 class="post-title">
+					<article class="post clearfix">
+						<a href="#" class="thumb pull-left">
+							<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
+						</a>
+						<h2 class="post-title">
+						<a href="#">EL tigre indefenso.</a>
+						</h2>
+						<p><span class="post-fecha"> 13 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
+						<p class="post-contenido text-justify">
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							EL tigre albino no es un buen depredador.asfjbjhasbfjbasfjbasfjobasjhbasfhkbasfhk
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							abfbassabas
+							fjsanjfasnsaf
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+						</p>
+						<div class="contenedor-botones">
+							<a href="#" class="btn btn-primary">Leer Mas</a>
+						</div>
+					</article>
+					<article class="post clearfix">
+						<a href="#" class="thumb pull-left">
+							<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
+						</a>
+						<h2 class="post-title">
 						<a href="#">EL TIGRE.</a>
-					</h2>
-					<p><span class="post-fecha"> 12 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
-					<div class="post-contenido text-justify"> 
-
-					    <p>El tigre (Panthera tigris) es una de las cuatro​ especies de la subfamilia de los panterinos (familia Felidae) pertenecientes al género Panthera. Se encuentra solamente en el continente asiático; es un predador carnívoro y es la especie de félido más grande del mundo junto con el león pudiendo alcanzar ambos un tamaño comparable al de los fósiles de félidos de mayor tamaño.</p>
-
-                        <p>Existen seis subespecies de tigre, de las cuales la de Bengala es la más numerosa; sus ejemplares constituyen cerca del 80 % de la población total de la especie; se encuentra en la India, Bangladés, Bután, Birmania y Nepal. Es una especie en peligro de extinción,​ y en la actualidad, la mayor parte de los tigres en el mundo viven en cualestiverio. El tigre es el animal nacional de Bangladesh y la India.</p>
-                    </div>
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-success">Leer Mas</a>
-					</div>
-				</article>
-
-				<article class="post clearfix">
-					<a href="#" class="thumb pull-left">
-						<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
-					</a>
-					<h2 class="post-title">
+						</h2>
+						<p><span class="post-fecha"> 12 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
+						<div class="post-contenido text-justify">
+							<p>El tigre (Panthera tigris) es una de las cuatro​ especies de la subfamilia de los panterinos (familia Felidae) pertenecientes al género Panthera. Se encuentra solamente en el continente asiático; es un predador carnívoro y es la especie de félido más grande del mundo junto con el león pudiendo alcanzar ambos un tamaño comparable al de los fósiles de félidos de mayor tamaño.</p>
+							<p>Existen seis subespecies de tigre, de las cuales la de Bengala es la más numerosa; sus ejemplares constituyen cerca del 80 % de la población total de la especie; se encuentra en la India, Bangladés, Bután, Birmania y Nepal. Es una especie en peligro de extinción,​ y en la actualidad, la mayor parte de los tigres en el mundo viven en cualestiverio. El tigre es el animal nacional de Bangladesh y la India.</p>
+						</div>
+						<div class="contenedor-botones">
+							<a href="#" class="btn btn-success">Leer Mas</a>
+						</div>
+					</article>
+					<article class="post clearfix">
+						<a href="#" class="thumb pull-left">
+							<img class="img-thumbnail" src="img/tiger.jpg" alt="Tiger">
+						</a>
+						<h2 class="post-title">
 						<a href="#">EL tigre indefenso.</a>
-					</h2>
-					<p><span class="post-fecha"> 11 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
-					<p class="post-contenido text-justify">
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						EL tigre albino no es un buen depredador.asfjbjhasbfjbasfjbasfjobasjhbasfhkbasfhk
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						abfbassabas 
-						fjsanjfasnsaf
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH 
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-						MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
-					</p>
-
-					<div class="contenedor-botones">
-						<a href="#" class="btn btn-primary">Leer Mas</a>
-					</div>
-				</article>
-			</section>
-			<aside class="col-md-3 hidden-xs hidden-sm">
-				<div class="row">
-					<h4>Patrocinadores</h4>	
+						</h2>
+						<p><span class="post-fecha"> 11 de Mayo de 2018 </span> por <span class="post-autor"><a href="#">Adrian Ponce</a></span></p>
+						<p class="post-contenido text-justify">
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							EL tigre albino no es un buen depredador.asfjbjhasbfjbasfjbasfjobasjhbasfhkbasfhk
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							abfbassabas
+							fjsanjfasnsaf
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+							MLFABHJKBASHFBASH HJKBASHFBASH HJKBASHFBASH
+						</p>
+						<div class="contenedor-botones">
+							<a href="#" class="btn btn-primary">Leer Mas</a>
+						</div>
+					</article>
+				</section>
+				<aside class="col-md-3 hidden-xs hidden-sm">
+					<div class="row">
+						<h4>Patrocinadores</h4>
 						<img src="img/CocaCola.png" alt="CocaCola">
 						<a href="http://www8.hp.com/es/es/home.html" target="_blank">
 							<img src="img/HP.png" alt="HP">
 						</a>
-				</div>
-			</aside>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<p>Adrian Ponce</p>
-				</div>				
+					</div>
+				</aside>
 			</div>
-		</div>
-	</footer>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p>Adrian Ponce</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="out">fkmkafsm</div>
+	</body>
 </html>
