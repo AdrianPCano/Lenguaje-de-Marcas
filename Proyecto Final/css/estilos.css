@@ -50,6 +50,7 @@
 	}
 }
 
+/*  ASIDE */
 .list-group-item {
 	background-color: #00cc66;
 }
@@ -71,9 +72,12 @@ aside div {
 	border: 2px solid;
 }
 
+/* CLOCK */
+
 .wrap {
-	margin-left: 1325px;
-	max-width: 200px;
+	margin-left: 50%;
+	max-width: 300px;
+	float: right;
 
 }
 
@@ -109,3 +113,4 @@ aside div {
 	display: block;
 	font-size: 1.5rem;
 }
+
