@@ -49,27 +49,15 @@ function visualize(jsonObject){
                       + "</div>"    
                       + "</article>");
     noticiasCarg++;
-    function mediaSize() { 
-      if (window.matchMedia('(max-width: 768px)').matches) {
-      /* Changes when we reach the max-width  */
-        $('article').css('background', 'red');
 
-      } else {
-      /* Reset for CSS changes – Still need a better way to do this! */
-        $('body, strong').removeAttr('style');
-      };
-      mediaSize();
-      /* Attach the function to the resize event listener */
-      window.addEventListener('resize', mediaSize, false);  
-  
-
-    /*const imgMedQy = matchMedia('(max-width: 768px)');
-    const ChangeSize = mql => {
+    const mediumBp = matchMedia('(max-width: 768px)');
+    const changeSize = mql => {
       mql.matches
-        ? document.getElementById('article') = 'width: 100%'
-        : document.body.style.background = 'yellow'
+        ? document.getElementByTagName('article').innerHTML = 'red'
+        : document.getElementByTagName('article').innerHTML = 'yellow'
     }
 
-    imgMedQy.addListener(ChangeSize)*/
+    mediumBp.addListener(changeSize);
+    changeSize(mediumBp);
   }); 
 }
