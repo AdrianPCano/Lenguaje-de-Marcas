@@ -49,13 +49,27 @@ function visualize(jsonObject){
                       + "</div>"    
                       + "</article>");
     noticiasCarg++;
-    const imgMedQy = matchMedia('(max-width: 768px)');
+    function mediaSize() { 
+      if (window.matchMedia('(max-width: 768px)').matches) {
+      /* Changes when we reach the max-width  */
+        $('article').css('background', 'red');
+
+      } else {
+      /* Reset for CSS changes – Still need a better way to do this! */
+        $('body, strong').removeAttr('style');
+      };
+      mediaSize();
+      /* Attach the function to the resize event listener */
+      window.addEventListener('resize', mediaSize, false);  
+  
+
+    /*const imgMedQy = matchMedia('(max-width: 768px)');
     const ChangeSize = mql => {
       mql.matches
-        ? document.news.imgmid.style.width = '100%'
+        ? document.getElementById('article') = 'width: 100%'
         : document.body.style.background = 'yellow'
     }
 
-    imgMedQy.addListener(ChangeSize)
+    imgMedQy.addListener(ChangeSize)*/
   }); 
 }
