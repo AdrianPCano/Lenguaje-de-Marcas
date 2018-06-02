@@ -75,8 +75,6 @@ function actualizeHour() {
   document.getElementById("month").innerHTML = [month[date.getMonth()]];
   document.getElementById("year").innerHTML = date.getFullYear();
   document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
 
 
 
@@ -96,11 +94,23 @@ function actualizeHour() {
     hours = 12;
   }
 
+
   document.getElementById("ampm").innerHTML = ampm;
+
+  if (minutes < 10){
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10){
+      seconds = "0" + seconds;
+    }
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
 
   setTimeout(actualizeHour, 1000);
 }
-  /*function mediaquery() {
+ 
+  /* MEDIA QUERY TRY
+  function mediaquery() {
     const win = matchMedia('(max-width: 768px)');
     const changeSize = mql => {
       mql.matches

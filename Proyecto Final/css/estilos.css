@@ -50,6 +50,13 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	article {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0px;
+	}
+}
 /*  ASIDE */
 .list-group-item {
 	background-color: #00cc66;
