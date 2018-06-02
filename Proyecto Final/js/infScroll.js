@@ -3,17 +3,17 @@ var NOTICIA2;
 var noticiasCarg=0;
 var totalNoticias=0;
 window.onload = function() {
-
+  actualizeHour();
   $.getJSON( "./json/news1.json", function( jsonObject ) {
     totalNoticias++;
-    //En este punto el objeto jsonObject corresponde al fichero
+    //jsonObject equivale al fichero que lo contiene
     NOTICIA1 = jsonObject;
     console.log(NOTICIA1);
   });
 
   $.getJSON( "./json/news2.json", function( jsonObject ) {
     totalNoticias++;
-  //En este punto el objeto jsonObject corresponde al fichero
+  //jsonObject equivale al fichero que lo contiene
     NOTICIA2 = jsonObject;
     console.log(NOTICIA2);
   });
@@ -50,7 +50,56 @@ function visualize(jsonObject){
                       + "</article>");
     noticiasCarg++;
   }); 
+}
+  
+function actualizeHour() {
+  var date = new Date();
 
+  var hours = date.getHours();
+
+  var minutes = date.getMinutes();
+
+  var seconds = date.getSeconds();
+
+  var day = date.getDate();
+
+  var month = date.getMonth();
+
+  var year = date.getFullYear();
+
+
+  var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+
+  document.getElementById("day").innerHTML = date.getDate();
+  document.getElementById("month").innerHTML = [month[date.getMonth()]];
+  document.getElementById("year").innerHTML = date.getFullYear();
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+
+
+  console.log('date' + date.getDate());
+  console.log('month' + date.getMonth());
+  console.log('year' + date.getFullYear());
+
+
+
+  if (hours >= 12){
+    var ampm = 'PM';
+  } else {
+    var ampm = 'AM';
+  }
+
+  if (hours == 0){
+    hours = 12;
+  }
+
+  document.getElementById("ampm").innerHTML = ampm;
+
+  setTimeout(actualizeHour, 1000);
+}
   /*function mediaquery() {
     const win = matchMedia('(max-width: 768px)');
     const changeSize = mql => {
@@ -62,4 +111,4 @@ function visualize(jsonObject){
     win.addListener(changeSize);
     changeSize(win);
   };*/
-}
+
