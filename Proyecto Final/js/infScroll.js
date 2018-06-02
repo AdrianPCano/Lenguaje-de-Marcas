@@ -60,6 +60,6 @@ function visualize(jsonObject){
     }
 
     win.addListener(changeSize);
-    changeSize(win);*/
-  };
+    changeSize(win);
+  };*/
 }

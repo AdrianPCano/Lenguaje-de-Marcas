@@ -1,58 +1,52 @@
 window.onload = function() {
-	var actualizeHour = function(){
-		var date = new Date(),
-			hours = date.getHours(),
-			ampm,
-			minutes = date.getMinutes(),
-			seconds = date.getSeconds(),
-			day = date.getDate(),
-			month = date.getMonth(),
-			year = date.getFullYear();
-
-		document.getElementById('hours').innerHTML = hello + "::";
-		var pHours = document.getElementById('hours'),
-		var pAMPM = document.getElementById('ampm'),
-		var pMinutes = document.getElementById('minutes'),
-		var pSeconds = document.getElementById('seconds'),
-		var pDay = document.getElementById('day'),
-		var pMonth = document.getElementById('month'),
-		var pYear = document.getElementById('year');
-
-		pDay.textContent = day;
-
-		var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-
-		pMonth.textContent = month[month];
-
-		pYear.textContent = year;
-
-		if (hours >= 12){
-			hours = hours -12;
-			ampm = 'PM';
-		} else {
-			ampm = 'AM';
-		}
-
-		if (hours == 0){
-			hours = 12;
-		}
-
-		pHours.textContent = hours;
-		pAMPM.textContent = ampm;
-
-		if (minutes < 10){
-			minutes = "0" + minutes;
-		}
-		if (seconds < 10){
-			seconds = "0" + seconds;
-		}
-
-		pMinutes.textContent = minutes;
-		pSeconds.textContent = seconds;
-	};
-
-
 	actualizeHour();
-	var interval setInterval(actualizeHour, 1000);
+}
 	
+function actualizeHour() {
+	var date = new Date();
+
+	var hours = date.getHours();
+
+	var minutes = date.getMinutes();
+
+	var seconds = date.getSeconds();
+
+	var day = date.getDate();
+
+	var month = date.getMonth();
+
+	var year = date.getFullYear();
+
+
+	var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+
+	document.getElementById("day").innerHTML = date.getDate();
+	document.getElementById("month").innerHTML = [month[date.getMonth()]];
+	document.getElementById("year").innerHTML = date.getFullYear();
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
+
+
+
+	console.log('date' + date.getDate());
+	console.log('month' + date.getMonth());
+	console.log('year' + date.getFullYear());
+
+
+
+	if (hours >= 12){
+		var ampm = 'PM';
+	} else {
+		var ampm = 'AM';
+	}
+
+	if (hours == 0){
+		hours = 12;
+	}
+
+	document.getElementById("ampm").innerHTML = ampm;
+
+	setTimeout(actualizeHour, 1000);
 }
