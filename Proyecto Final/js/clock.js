@@ -1,5 +1,4 @@
 window.onload = function() {
-
 	var actualizeHour = function(){
 		var date = new Date(),
 			hours = date.getHours(),
@@ -10,6 +9,7 @@ window.onload = function() {
 			month = date.getMonth(),
 			year = date.getFullYear();
 
+		document.getElementById('hours').innerHTML = hello + "::";
 		var pHours = document.getElementById('hours'),
 		var pAMPM = document.getElementById('ampm'),
 		var pMinutes = document.getElementById('minutes'),
@@ -55,4 +55,4 @@ window.onload = function() {
 	actualizeHour();
 	var interval setInterval(actualizeHour, 1000);
 	
-}()
+}
