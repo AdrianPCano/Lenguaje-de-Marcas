@@ -34,13 +34,13 @@ $(window).on("scroll", function() {
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
   $.each( jsonObject, function( i, news ) {
-    $("#see").append( "<article class='col-xs-5 clearfix' style='margin-left: 365px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid red;' >"
+    $("#see").append( "<article class='col-xs-6 clearfix' style='margin-left: 365px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid red;' >"
                       + "<h1>"
                       + news.titular  
                       + "</h1>"
                       + "<div class='fecha'>"  
                       + news.fecha 
-                      + "<img src=" + news.imgmid + " class='img-rounded img-thumbnail pull-left' style='width: 45%; margin-right: 10px; ' alt='Tiger' />"                       
+                      + "<img src=" + news.imgmid + " class='img-rounded img-thumbnail pull-left' style='width: 40%; margin-right: 10px; ' alt='Tiger' />"                       
                       + "</div>"  
                       + "<div class='text-justify'>" 
                       + "<p>"

@@ -45,22 +45,12 @@
 @media screen and (max-width: 768px) {
 	.post .thumb {
 		width: 100%;
-		margin-bottom: 20px;
-		margin-right: 0px;
+		float: left;
 	}
 }
 
-@media screen and (max-width: 768px) {
-	article {
-		width: 100%;
-		margin-bottom: 20px;
-		margin-right: 0px;
-	}
-}
+
 /*  ASIDE */
-.list-group-item {
-	background-color: #00cc66;
-}
 
 aside h4 {
 	text-align: center;
