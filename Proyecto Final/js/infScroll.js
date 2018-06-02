@@ -33,7 +33,10 @@ $(window).on("scroll", function() {
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
   $.each( jsonObject, function( i, news ) {
-    $("#see").append( "<h1 id='" + i + "'>" + news.titular+ "</h1>" + "<p>" + news.descripcion + "</p>" + "<img>" + news.img + "</img>" );
+    $("#see").append( "<h1 id='" + i + "'>" + news.titular+ "</h1> " 
+                      + "<p class='text-danger text-justify col-xs-6'>" + news.descripcion + "</p>" 
+                      + "<p>" + news.fecha + "</p>" 
+                      + "<img src=" + news.imgmid + " style='width: 120px;'</img>" );
     noticiasCarg++;
   }); 
 }
