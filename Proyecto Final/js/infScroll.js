@@ -30,13 +30,32 @@ $(window).on("scroll", function() {
   } 
 });
 
+
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
   $.each( jsonObject, function( i, news ) {
-    $("#see").append( "<h1 id='" + i + "'>" + news.titular+ "</h1> " 
-                      + "<p class='text-danger text-justify col-xs-6'>" + news.descripcion + "</p>" 
-                      + "<p>" + news.fecha + "</p>" 
-                      + "<img src=" + news.imgmid + " style='width: 120px;'</img>" );
+    $("#see").append( "<article class='col-xs-5 clearfix' style='margin-left: 365px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid red;' >"
+                      + "<h1>"
+                      + news.titular  
+                      + "</h1>"
+                      + "<div class='fecha'>"  
+                      + news.fecha 
+                      + "<img src=" + news.imgmid + " class='img-rounded img-thumbnail pull-left' style='width: 45%; margin-right: 10px; ' alt='Tiger' />"                       
+                      + "</div>"  
+                      + "<div class='text-justify'>" 
+                      + "<p>"
+                      + news.descripcion  
+                      + "</p>"
+                      + "</div>"    
+                      + "</article>");
     noticiasCarg++;
+    const imgMedQy = matchMedia('(max-width: 768px)');
+    const ChangeSize = mql => {
+      mql.matches
+        ? document.news.imgmid.style.width = '100%'
+        : document.body.style.background = 'yellow'
+    }
+
+    imgMedQy.addListener(ChangeSize)
   }); 
 }
