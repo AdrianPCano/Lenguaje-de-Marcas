@@ -49,15 +49,17 @@ function visualize(jsonObject){
                       + "</div>"    
                       + "</article>");
     noticiasCarg++;
+  }); 
 
-    const mediumBp = matchMedia('(max-width: 768px)');
+  /*function mediaquery() {
+    const win = matchMedia('(max-width: 768px)');
     const changeSize = mql => {
       mql.matches
-        ? document.getElementByTagName('article').innerHTML = 'red'
-        : document.getElementByTagName('article').innerHTML = 'yellow'
+        ? document.getElementsByTagName('article')[0].style = 'background-color: red'
+        : document.getElementsByTagName('article')[0].style = 'background-color: yellow'
     }
 
-    mediumBp.addListener(changeSize);
-    changeSize(mediumBp);
-  }); 
+    win.addListener(changeSize);
+    changeSize(win);*/
+  };
 }
