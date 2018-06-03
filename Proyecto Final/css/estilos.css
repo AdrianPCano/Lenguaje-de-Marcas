@@ -49,6 +49,12 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.jumbotron .title {
+	font-size: 50px;
+	}
+}
+
 
 /*  ASIDE */
 
