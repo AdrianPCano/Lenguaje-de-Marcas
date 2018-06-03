@@ -31,16 +31,16 @@ $(window).on("scroll", function() {
   } 
 });
 
-$(document).ready(function(){ 
+/*$(document).ready(function(){ 
   $('#loadJS').on('click',function(){
-    //Cargamos el json como objeto
+    //Cargamos el json 
     $('#loadJS').hide();
     if (noticiasCarg < totalNoticias) { 
       visualize(NOTICIA1);
       visualize(NOTICIA2);
     }
   });
-});
+});*/
 
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
@@ -49,8 +49,8 @@ function visualize(jsonObject){
                       + "<img src=" + news.imgmid + " class='img-rounded img-thumbnail pull-left' style='width: 40%; margin-right: 10px; ' alt='Tiger' />"                       
                       + "<h1>"
                       + news.titular  
-                      + "</h1>" 
-                      + news.fecha  
+                      + "</h1>"
+                      + news.fecha 
                       + "<div class='text-justify'>" 
                       + "<p>"
                       + news.descripcion  
