@@ -31,7 +31,7 @@ $(window).on("scroll", function() {
   } 
 });
 
-$(document).ready(function(){ 
+/*$(document).ready(function(){ 
   $('#loadJS').on('click',function(){
     //Cargamos el json 
     $('#loadJS').hide();
@@ -40,7 +40,7 @@ $(document).ready(function(){
       visualize(NOTICIA2);
     }
   });
-});
+});*/
 
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
