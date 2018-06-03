@@ -88,14 +88,6 @@ function actualizeHour() {
   document.getElementById("year").innerHTML = date.getFullYear();
   document.getElementById("hours").innerHTML = hours;
 
-
-
-  console.log('date' + date.getDate());
-  console.log('month' + date.getMonth());
-  console.log('year' + date.getFullYear());
-
-
-
   if (hours >= 12){
     var ampm = 'PM';
   } else {

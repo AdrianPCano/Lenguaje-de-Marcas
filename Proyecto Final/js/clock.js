@@ -25,7 +25,7 @@ function actualizeHour() {
   document.getElementById("day").innerHTML = date.getDate();
   document.getElementById("month").innerHTML = [month[date.getMonth()]];
   document.getElementById("year").innerHTML = date.getFullYear();
-
+  document.getElementById("hours").innerHTML = hours;
 
 
   if (hours >= 12){
@@ -37,9 +37,7 @@ function actualizeHour() {
   if (hours == 0){
     hours = 12;
   }
-
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("ampm").innerHTML = ampm;
+    document.getElementById("ampm").innerHTML = ampm;
 
   if (minutes < 10){
       minutes = "0" + minutes;
