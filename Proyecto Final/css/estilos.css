@@ -128,3 +128,13 @@ aside div {
 .video {
 	width: 100%
 }
+
+.photo {
+	width: 250px;
+	float: right;
+	margin-top: -60%;
+}
+.tigre1 {
+	width: 250px;
+	margin-top: -60%;
+}
