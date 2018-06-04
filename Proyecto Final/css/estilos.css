@@ -90,7 +90,7 @@ aside div {
 	color: white;
 	font-family: Oswald, Arial;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	margin-bottom: 0.3125rem; /* entorno a 5px */
 	background: rgba(0,0,0,.5); /* Transparencia .5 */ 
 }
@@ -111,7 +111,7 @@ aside div {
 .clock .seconds,
 .clock .ampm {
 	display: block;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 /* NEWS 1 & 2 */
