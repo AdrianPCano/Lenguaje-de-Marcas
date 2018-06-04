@@ -164,3 +164,9 @@ aside div {
 	margin-right: -15%;
 	margin-top: -60%;
 }
+
+#loadJS {
+	float: right;
+	margin-right: 25%;
+	margin-top: -3%;
+}

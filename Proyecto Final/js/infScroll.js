@@ -27,11 +27,12 @@ $(window).on("scroll", function() {
     if (noticiasCarg < totalNoticias) { 
       visualize(NOTICIA1);
       visualize(NOTICIA2);
+      $('#loadJS').hide();
     }
   } 
 });
 
-/*$(document).ready(function(){ 
+$(document).ready(function(){ 
   $('#loadJS').on('click',function(){
     //Cargamos el json 
     $('#loadJS').hide();
@@ -40,7 +41,7 @@ $(window).on("scroll", function() {
       visualize(NOTICIA2);
     }
   });
-});*/
+});
 
 // Visualizamos los ficheros json en la pagina
 function visualize(jsonObject){
