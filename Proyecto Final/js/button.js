@@ -1,40 +1,104 @@
-//-------------------------------------//
-// hack CodePen to load pens as pages
-
-var nextPenSlugs = [
-  '3d9a3b8092ebcf9bc4a72672b81df1ac',
-  '2cde50c59ea73c47aec5bd26343ce287',
-  'd83110c5f71ea23ba5800b6b1a4a95c4',
-];
-
-function getPenPath() {
-  var slug = nextPenSlugs[ this.loadCount ];
-  if ( slug ) {
-    return 'https://s.codepen.io/desandro/debug/' + slug;
-  }
-}
-
-//-------------------------------------//
-// init Infinite Scroll
-
-var $container = $('.container').infiniteScroll({
-  path: getPenPath,
-  append: '.post',
-  // disable loading on scroll
-  loadOnScroll: false,
-  status: '.page-load-status',
-});
-
-// load next page & enable loading on scroll on button click
-
-var $viewMoreButton = $('.view-more-button');
-$viewMoreButton.on( 'click', function() {
-  // load next page
-  $container.infiniteScroll('loadNextPage');
-  // enable loading on scroll
-  $container.infiniteScroll( 'option', {
-    loadOnScroll: true,
+var NOTICIA1;
+var NOTICIA2;
+var noticiasCarg=0;
+var totalNoticias=0;
+window.onload = function() {
+  actualizeHour();
+  $.getJSON( "./json/news1.json", function( jsonObject ) {
+    totalNoticias++;
+    //jsonObject equivale al fichero que lo contiene
+    NOTICIA1 = jsonObject;
+    console.log(NOTICIA1);
   });
-  // hide button
-  $viewMoreButton.hide();
+
+  $.getJSON( "./json/news2.json", function( jsonObject ) {
+    totalNoticias++;
+  //jsonObject equivale al fichero que lo contiene
+    NOTICIA2 = jsonObject;
+    console.log(NOTICIA2);
+  });
+};
+
+$(document).ready(function(){ 
+  $('#loadJS').on('click',function(){
+    //Cargamos el json 
+    $('#loadJS').hide();
+    if (noticiasCarg < totalNoticias) { 
+      visualize(NOTICIA1);
+      visualize(NOTICIA2);
+    }
+  });
 });
+
+// Visualizamos los ficheros json en la pagina
+function visualize(jsonObject){
+  $.each( jsonObject, function( i, news ) {
+    $("#see").append( "<article class='col-xs-6 clearfix' style='margin-left: 19%; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid red;' >"
+                      + "<img src=" + news.imgmid + " class='img-rounded img-thumbnail pull-left' style='width: 40%; margin-right: 10px; ' alt='Tiger' />"                       
+                      + "<h1>"
+                      + news.titular 
+                      + "</h1>"
+                      + news.fecha 
+                      + "<div class='text-justify'>" 
+                      + "<p>"
+                      + news.descripcion  
+                      + "</p>"
+                      + "</div>"
+                      + "<a class='btn btn-primary'>"
+                      + news.button    
+                      + "</a>"
+                      + "</article>");
+    noticiasCarg++;
+  }); 
+}
+  
+function actualizeHour() {
+  var date = new Date();
+
+  var hours = date.getHours();
+
+  var minutes = date.getMinutes();
+
+  var seconds = date.getSeconds();
+
+  var day = date.getDate();
+
+  var month = date.getMonth();
+
+  var year = date.getFullYear();
+
+
+  var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+
+  document.getElementById("day").innerHTML = date.getDate();
+  document.getElementById("month").innerHTML = [month[date.getMonth()]];
+  document.getElementById("year").innerHTML = date.getFullYear();
+  document.getElementById("hours").innerHTML = hours;
+
+  if (hours >= 12){
+    var ampm = 'PM';
+  } else {
+    var ampm = 'AM';
+  }
+
+  if (hours == 0){
+    hours = 12;
+  }
+
+
+  document.getElementById("ampm").innerHTML = ampm;
+
+  if (minutes < 10){
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10){
+      seconds = "0" + seconds;
+    }
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  setTimeout(actualizeHour, 1000);
+}
+ 
+
