@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>NewsWorld</title>
+	<link>https://rawgit.com/AdrianPCano/Lenguaje-de-Marcas/1166c5f2/Proyecto%20Final/Index.html</link>
+	<description>Pagina web de noticias</description>
+	<language>es</language>
+	<item>
+		<title>EL TIGRE</title>
+		<link>https://rawgit.com/AdrianPCano/Lenguaje-de-Marcas/1166c5f2/Proyecto%20Final/news1.html</link>
+		<description>Anteriormente se le consideraba la segunda subespecie en tamaño, detrás del tigre siberiano (P. tigris altaica), sin embargo estudios recientes sugieren que en la actualidad, esta podría ser la subespecie de mayor tamaño. La longitud total de los machos es de 270-310 cm mientras que la de las hembras es de 240-265 cm; la cola mide unos 85-100 cm de largo y la altura a los hombros de 90-110 cm. El peso depende de la región, algunos tigres están por debajo de los 100 kg mientras que otros llegan a los 230 kg en el caso de los machos En Chitwal 7 tigres machos arrojaron un promedio de 221 kg sin embargo, estos tigres fueron alimentados previamente antes de su captura, en un día se observó como una tigresa consumió 30 kg de carne y los machos más grandes tienen mayor ingesta de alimentos. Sin embargo, aquellos machos que habitan el Centro de India, tienen un peso de entre 160 a 233 kg, y un promedio de 190 kg para los machos y de 131 kg para las hembras. Aunque se conoció un gran macho del parque nacional Ranthambore de nombre Ustad (T24) al que se le adjudican la muerte de cuatro personas entre 2010 y 2015 llegó a los 250 kg de peso. Otro gran macho conocido en el Parque nacional de Tadoba e identificado con el nombre de Wagdoh o Scarface peso alrededor de 300 kg11​. Los tigres pesados en India no son ajustados al contenido estomacal así que el peso real sería menor.</description>
+	</item>
+	<item>
+		<title>EL LOBO</title>
+		<link>https://rawgit.com/AdrianPCano/Lenguaje-de-Marcas/1166c5f2/Proyecto%20Final/news1.htmlhttps://cdn.rawgit.com/AdrianPCano/Lenguaje-de-Marcas/1166c5f2/Proyecto%20Final/news2.html</link>
+		<description>El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El perro doméstico (Canis lupus familiaris) se considera miembro de la misma especie según distintos indicios, la secuencia del ADN y otros estudios genéticos. El primer registro fósil data de hace 800.000 años. Los lobos fueron antaño abundantes y se distribuían por Norteamérica, Eurasia y el Oriente Medio. Actualmente, por una serie de razones relacionadas con el hombre, incluyendo el muy extendido hábito de la caza, los lobos habitan únicamente en una muy limitada porción del que antes fue su territorio. Aunque está clasificada como una especie poco amenazada para su extinción, en algunas regiones, incluyendo la parte continental de los Estados Unidos de América, la especie está listada como en peligro o amenazada. Los lobos son cazados en muchas áreas del mundo por la amenaza que representan para el ganado, así como por deporte.</description>
+	</item>
+</channel>
+</rss>
