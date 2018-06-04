@@ -53,6 +53,7 @@
 	}
 }
 
+
 /*  ASIDE */
 
 aside h4 {
@@ -72,12 +73,38 @@ aside div {
 	border: 2px solid;
 }
 
+/*  PUBLICIDAD */
+
+.publi {
+	height: 90px;
+	width: 90px;
+	float: left;
+	margin-left: 15px;
+}
+.publi h4 {
+	text-align: center;
+	border-bottom:  10px solid white;
+	background-color:  #b3ffb3;
+	margin-top: 19px;
+	font-size: 14px;
+}
+.publi img {
+	width: 65px;
+	margin-top: 10px;
+}
+
+.publi div {
+	background-color:  #b3ffb3;
+	border: 2px solid;
+}
+
 /* CLOCK */
 
 .wrap {
-	margin-left: 50%;
+	margin-left: 25%;
 	max-width: 300px;
 	float: right;
+	margin-top: 0px;
 
 }
 
