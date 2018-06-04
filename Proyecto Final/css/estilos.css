@@ -49,10 +49,9 @@
 
 @media screen and (max-width: 768px) {
 	.jumbotron .title {
-	font-size: 50px;
+		font-size: 50px;
 	}
 }
-
 
 /*  ASIDE */
 
@@ -132,9 +131,5 @@ aside div {
 .photo {
 	width: 250px;
 	float: right;
-	margin-top: -60%;
-}
-.tigre1 {
-	width: 250px;
 	margin-top: -60%;
 }
